@@ -1,0 +1,9 @@
+{
+  "parent": "genetic_playground:custom/aluminiumcableplusjunction",
+  "textures": {
+    "all": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2",
+    "particle": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2",
+    "0": "genetic_playground:block/cablealuminium"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"genetic_playground:cow_cell","components":{"minecraft:custom_data":{"analyzed":1,"MilkableGene":1,"SpeedDNA":0.2,"MaxHealthDNA":10}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"genetic_playground:empty_plasmid"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

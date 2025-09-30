@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "BloodPurifier",
+    "blockstateList": [
+      {
+        "texture": "smooth_stone_texture_je2_be2-1.png_2",
+        "textureTop": "minecraft:smooth_stone",
+        "textureLeft": "smooth_stone_texture_je2_be2-1.png",
+        "textureFront": "smooth_stone_texture_je2_be2-1.png_1-1.png_1",
+        "textureRight": "smooth_stone_texture_je2_be2-1.png",
+        "textureBack": "smooth_stone_texture_je2_be2-1.png",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 8,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

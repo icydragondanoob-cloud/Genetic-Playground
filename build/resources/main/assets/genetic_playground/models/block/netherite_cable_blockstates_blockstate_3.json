@@ -1,0 +1,9 @@
+{
+  "parent": "genetic_playground:custom/netheritetjunction",
+  "textures": {
+    "all": "minecraft:block/netherite_block",
+    "particle": "minecraft:block/netherite_block",
+    "0": "genetic_playground:block/cablenetherite"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "DNAExtractor",
+    "blockstateList": [
+      {
+        "texture": "smooth_stone_texture_je2_be2-1.png_2",
+        "textureTop": "smooth_stone_texture_je2_be2-1.png_2",
+        "textureLeft": "smooth_stone_texture_je2_be2-1.png_2",
+        "textureFront": "dnaextractoron",
+        "textureRight": "smooth_stone_texture_je2_be2-1.png_2",
+        "textureBack": "smooth_stone_texture_je2_be2-1.png_2",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

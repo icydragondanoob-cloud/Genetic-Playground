@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "genetic_playground:syringe_of_horse_blood",
+    "genetic_playground:syringe_of_pig_blood",
+    "genetic_playground:syringe_of_enderman_enderfluid",
+    "genetic_playground:syringe_of_chicken_blood",
+    "genetic_playground:syringe_of_rabbit_blood",
+    "genetic_playground:syringe_of_cod_blood",
+    "genetic_playground:syringe_of_sterile_blood",
+    "genetic_playground:syringe_of_sheep_blood",
+    "genetic_playground:syringe_of_donkey_blood",
+    "genetic_playground:syringe_of_cow_blood",
+    "genetic_playground:syringe_of_mule_blood",
+    "genetic_playground:syringe_of_salmon_blood"
+  ]
+}

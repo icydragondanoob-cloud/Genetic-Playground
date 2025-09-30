@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LabFan",
+    "blockstateList": [
+      {
+        "texture": "stone_bricks_texture_je3_be2-1.png_3",
+        "textureTop": "stone_bricks_texture_je3_be2-1.png_3",
+        "textureLeft": "stone_bricks_texture_je3_be2-1.png_3",
+        "textureFront": "fanspin",
+        "textureRight": "stone_bricks_texture_je3_be2-1.png_3",
+        "textureBack": "stone_bricks_texture_je3_be2-1.png_3",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

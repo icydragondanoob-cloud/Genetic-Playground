@@ -1,0 +1,67 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "plasmid_synthesiser_jei_type",
+    "result": {
+      "value": "CUSTOM:MilkablePlasmid"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixMilkable"
+      },
+      {
+        "value": "CUSTOM:EmptyPlasmid"
+      }
+    ],
+    "integers": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "PlasmidSynthesiserJEIType"
+  }
+}

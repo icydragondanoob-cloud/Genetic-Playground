@@ -1,0 +1,48 @@
+{
+  "type": "genetic_playground:plasmid_synthesiser_jei_type",
+  "ingredients": [
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:double_helix_grazing"
+    },
+    {
+      "item": "genetic_playground:empty_plasmid"
+    }
+  ],
+  "output": {
+    "id": "genetic_playground:grazing_plasmid",
+    "count": 1
+  }
+}

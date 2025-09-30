@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cablenetherite",
+        "1": "cablemiddlenetherite",
+        "missing": "minecraft:netherite_block"
+      },
+      "name": "default"
+    }
+  }
+}

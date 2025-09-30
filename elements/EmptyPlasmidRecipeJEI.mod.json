@@ -1,0 +1,67 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "plasmid_synthesiser_jei_type",
+    "result": {
+      "value": "CUSTOM:EmptyPlasmid"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixFailed"
+      },
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "integers": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "PlasmidSynthesiserJEIType"
+  }
+}

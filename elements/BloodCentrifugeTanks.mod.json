@@ -1,0 +1,18 @@
+{
+  "_fv": 79,
+  "_type": "fluid_tanks",
+  "definition": {
+    "block": "BloodCentrifuge",
+    "inteType": "Default",
+    "tanks": [],
+    "gui": "BloodCentrifugeGUI",
+    "overlays": [
+      {
+        "xPos": 152,
+        "yPos": 15,
+        "height": 64,
+        "index": 0
+      }
+    ]
+  }
+}

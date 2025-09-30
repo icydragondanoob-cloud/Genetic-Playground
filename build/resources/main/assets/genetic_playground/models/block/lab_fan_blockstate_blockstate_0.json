@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
+    "up": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
+    "north": "genetic_playground:block/fanspin",
+    "east": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
+    "south": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
+    "west": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
+    "particle": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3"
+  },
+  "render_type": "solid"
+}

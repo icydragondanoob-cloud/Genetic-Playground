@@ -1,0 +1,78 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 181,
+    "height": 195,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 16,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "fissionreactor4.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 23,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spritesheet_12.png",
+          "spritesCount": 56,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "BatterySpritesheetProcedure"
+          },
+          "x": 244,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_battery_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "BatteryTooltip"
+          },
+          "width": 16,
+          "height": 64,
+          "x": 244,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_radioactive",
+          "text": {
+            "fixedValue": "Radioactive"
+          },
+          "width": 18,
+          "height": 17,
+          "x": 269,
+          "y": 115,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "BloodPurifierGUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

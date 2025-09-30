@@ -1,0 +1,10 @@
+{
+  "parent": "genetic_playground:custom/goldcableplusjunctionup",
+  "textures": {
+    "all": "minecraft:block/gold_block",
+    "particle": "minecraft:block/gold_block",
+    "0": "genetic_playground:block/cable1",
+    "1": "genetic_playground:block/cablemiddle"
+  },
+  "render_type": "solid"
+}

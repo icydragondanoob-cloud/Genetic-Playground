@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "pipe1",
+        "1": "copperpipefront"
+      },
+      "name": "default"
+    }
+  }
+}

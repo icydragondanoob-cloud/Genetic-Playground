@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "genetic_playground:higher_jump_plasmid",
+    "genetic_playground:empty_plasmid",
+    "genetic_playground:hydrophobia_plasmid",
+    "genetic_playground:milkable_plasmid",
+    "genetic_playground:endersight_plasmid",
+    "genetic_playground:egg_plasmid",
+    "genetic_playground:water_speed_plasmid",
+    "genetic_playground:movement_speed_plasmid",
+    "genetic_playground:grazing_plasmid",
+    "genetic_playground:wooly_plasmid",
+    "genetic_playground:water_breathing_plasmid",
+    "genetic_playground:max_health_plasmid",
+    "genetic_playground:teleporation_plasmid"
+  ]
+}

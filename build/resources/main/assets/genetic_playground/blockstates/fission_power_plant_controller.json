@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "genetic_playground:block/fission_power_plant_controller"
+    }
+  }
+}

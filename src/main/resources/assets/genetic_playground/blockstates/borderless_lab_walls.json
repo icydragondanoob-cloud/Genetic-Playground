@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "genetic_playground:block/borderless_lab_walls"
+    }
+  }
+}

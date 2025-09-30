@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3-1.png_1",
+    "particle": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3-1.png_1"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cable1",
+        "1": "cablemiddle",
+        "missing": "minecraft:gold_block"
+      },
+      "name": "default"
+    }
+  }
+}

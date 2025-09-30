@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "genetic_playground:block/plasmid_synthesiser"
+    },
+    "facing=east": {
+      "model": "genetic_playground:block/plasmid_synthesiser",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "genetic_playground:block/plasmid_synthesiser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "genetic_playground:block/plasmid_synthesiser",
+      "y": 270
+    }
+  }
+}

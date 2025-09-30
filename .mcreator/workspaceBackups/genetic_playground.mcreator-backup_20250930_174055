@@ -1,0 +1,3559 @@
+{
+  "mod_elements": [
+    {
+      "name": "Syringe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/syringe.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeItem.java"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "GeneticPlayground",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "genetic_playground",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SyringeOfPigBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_pig_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfPigBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_pig_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "SyringeOfCowBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_cow_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfCowBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_cow_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CreativeEnergyOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_energy_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CreativeEnergyOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodPurifier",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/BloodPurifierBlock.java",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/BloodPurifierBlockEntity.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/blood_purifier.json",
+          "src/main/resources/assets/genetic_playground/models/item/blood_purifier.json",
+          "src/main/resources/assets/genetic_playground/blockstates/blood_purifier.json",
+          "src/main/resources/assets/genetic_playground/models/block/blood_purifier.json"
+        ]
+      }
+    },
+    {
+      "name": "BloodPurifierGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifier_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/BloodPurifierGUIMenu.java",
+          "src/main/java/net/mcreator/geneticplayground/client/gui/BloodPurifierGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "BatterySpritesheetProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_spritesheet_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BatterySpritesheetProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BatteryTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "battery_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BatteryTooltipProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodPurifierGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifier_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodPurifierGUIWhileThisGUIIsOpenTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodPurifierOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifier_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodPurifierOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/BloodPurifier"
+    },
+    {
+      "name": "PurifiedTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purified_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/PurifiedTooltipProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ProgressUpdater",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_updater",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/ProgressUpdaterProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodPurifierTanks",
+      "type": "fluid_tanks",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifier_tanks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PlasmaResidue",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasma_residue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/PlasmaResidueBlock.java",
+          "src/main/java/net/mcreator/geneticplayground/fluid/PlasmaResidueFluid.java",
+          "src/main/resources/assets/genetic_playground/models/item/plasma_residue_bucket.json",
+          "src/main/resources/assets/genetic_playground/models/block/plasma_residue.json",
+          "src/main/resources/assets/genetic_playground/blockstates/plasma_residue.json",
+          "src/main/java/net/mcreator/geneticplayground/fluid/types/PlasmaResidueFluidType.java",
+          "src/main/java/net/mcreator/geneticplayground/item/PlasmaResidueItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MachineSpeedUpgrade",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "machine_speed_upgrade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/machine_speed_upgrade.json",
+          "src/main/java/net/mcreator/geneticplayground/item/MachineSpeedUpgradeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodCentrifugeGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/BloodCentrifugeGUIMenu.java",
+          "src/main/java/net/mcreator/geneticplayground/client/gui/BloodCentrifugeGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodCentrifugeOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodCentrifugeOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/BloodCentrifuge"
+    },
+    {
+      "name": "PigCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/pig_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/PigCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "CowCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cow_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/cow_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/CowCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "TestTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_tooltip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/TestTooltipProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SterileBlood",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sterile_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/blockstates/sterile_blood.json",
+          "src/main/java/net/mcreator/geneticplayground/block/SterileBloodBlock.java",
+          "src/main/resources/assets/genetic_playground/models/item/sterile_blood_bucket.json",
+          "src/main/resources/assets/genetic_playground/models/block/sterile_blood.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SterileBloodItem.java",
+          "src/main/java/net/mcreator/geneticplayground/fluid/types/SterileBloodFluidType.java",
+          "src/main/java/net/mcreator/geneticplayground/fluid/SterileBloodFluid.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodCentrifugeTanks",
+      "type": "fluid_tanks",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge_tanks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BloodCentrifugeBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/blood_centrifuge_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/blood_centrifuge_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "CellAnalyzerGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cell_analyzer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/CellAnalyzerGUIMenu.java",
+          "src/main/java/net/mcreator/geneticplayground/client/gui/CellAnalyzerGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodCentrifuge",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/blocks/blood_centrifuge.json",
+          "src/main/resources/assets/genetic_playground/models/block/blood_centrifuge.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/BloodCentrifugeBlockEntity.java",
+          "src/main/resources/assets/genetic_playground/models/item/blood_centrifuge.json",
+          "src/main/resources/assets/genetic_playground/blockstates/blood_centrifuge.json",
+          "src/main/java/net/mcreator/geneticplayground/block/BloodCentrifugeBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "CreativeEnergyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creative_energy_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/entity/CreativeEnergyBlockBlockEntity.java",
+          "src/main/resources/assets/genetic_playground/models/block/creative_energy_block.json",
+          "src/main/java/net/mcreator/geneticplayground/block/CreativeEnergyBlockBlock.java",
+          "src/main/resources/assets/genetic_playground/blockstates/creative_energy_block.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/creative_energy_block.json",
+          "src/main/resources/assets/genetic_playground/models/item/creative_energy_block.json"
+        ]
+      }
+    },
+    {
+      "name": "CellAnalyzer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cell_analyzer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/blocks/cell_analyzer.json",
+          "src/main/resources/assets/genetic_playground/blockstates/cell_analyzer.json",
+          "src/main/resources/assets/genetic_playground/models/item/cell_analyzer.json",
+          "src/main/java/net/mcreator/geneticplayground/block/CellAnalyzerBlock.java",
+          "src/main/resources/assets/genetic_playground/models/block/cell_analyzer.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/CellAnalyzerBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodPurifierBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifier_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/blood_purifier_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "CellAnalyzerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cell_analyzer_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CellAnalyzerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/CellAnalyzer"
+    },
+    {
+      "name": "CowOnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cow_on_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CowOnSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CellAnalyzerBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cell_analyzer_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/cell_analyzer_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "DNAExtractor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_extractor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/entity/DNAExtractorBlockEntity.java",
+          "src/main/resources/assets/genetic_playground/models/block/dna_extractor.json",
+          "src/main/resources/assets/genetic_playground/models/item/dna_extractor.json",
+          "src/main/resources/assets/genetic_playground/blockstates/dna_extractor.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/dna_extractor.json",
+          "src/main/java/net/mcreator/geneticplayground/block/DNAExtractorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DNAExtractorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_extractor_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/client/gui/DNAExtractorGUIScreen.java",
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/DNAExtractorGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "DoubleHelixMovementSpeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_movement_speed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_movement_speed.json",
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixMovementSpeedItem.java"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "DoubleHelixMilkable",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_milkable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixMilkableItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_milkable.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "DoubleHelixMaxHealth",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_max_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixMaxHealthItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_max_health.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "DNAExtractorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_extractor_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/DNAExtractorOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "DNAExtractorBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dna_extractor_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/dna_extractor_blockstates_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "DoubleHelixGrazing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_grazing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixGrazingItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_grazing.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "GrazingAnimalOnSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grazing_animal_on_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/GrazingAnimalOnSpawnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "DoubleHelixFailed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_failed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixFailedItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_failed.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "SyringeOfSterileBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_sterile_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_sterile_blood.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfSterileBloodItem.java"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "PlasmidSynthesiser",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_synthesiser",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/entity/PlasmidSynthesiserBlockEntity.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/plasmid_synthesiser.json",
+          "src/main/java/net/mcreator/geneticplayground/block/PlasmidSynthesiserBlock.java",
+          "src/main/resources/assets/genetic_playground/models/item/plasmid_synthesiser.json",
+          "src/main/resources/assets/genetic_playground/blockstates/plasmid_synthesiser.json",
+          "src/main/resources/assets/genetic_playground/models/block/plasmid_synthesiser.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasmidSynthesiserGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_synthesiser_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/client/gui/PlasmidSynthesiserGUIScreen.java",
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/PlasmidSynthesiserGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "PlasmidSynthesizerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_synthesizer_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/PlasmidSynthesizerOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "EmptyPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/empty_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/EmptyPlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "MovementSpeedPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "movement_speed_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/movement_speed_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/MovementSpeedPlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "CowDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cow_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CowDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "CultivatedCreeper",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivated_creeper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/client/renderer/CultivatedCreeperRenderer.java",
+          "src/main/resources/assets/genetic_playground/models/item/cultivated_creeper_spawn_egg.json",
+          "src/main/resources/data/genetic_playground/neoforge/biome_modifier/cultivated_creeper_biome_modifier.json",
+          "src/main/java/net/mcreator/geneticplayground/entity/CultivatedCreeperEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CultivatedCreeperLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cultivated_creeper_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/entities/cultivated_creeper.json"
+        ]
+      }
+    },
+    {
+      "name": "LabBrickWalls",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_brick_walls",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/lab_brick_walls.json",
+          "src/main/resources/assets/genetic_playground/blockstates/lab_brick_walls.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/lab_brick_walls.json",
+          "src/main/java/net/mcreator/geneticplayground/block/LabBrickWallsBlock.java",
+          "src/main/resources/assets/genetic_playground/models/item/lab_brick_walls.json"
+        ]
+      }
+    },
+    {
+      "name": "LabWalls",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_walls",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/blocks/lab_walls.json",
+          "src/main/java/net/mcreator/geneticplayground/block/LabWallsBlock.java",
+          "src/main/resources/assets/genetic_playground/models/block/lab_walls.json",
+          "src/main/resources/assets/genetic_playground/blockstates/lab_walls.json",
+          "src/main/resources/assets/genetic_playground/models/item/lab_walls.json"
+        ]
+      }
+    },
+    {
+      "name": "BorderlessLabWalls",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "borderless_lab_walls",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/blockstates/borderless_lab_walls.json",
+          "src/main/resources/assets/genetic_playground/models/item/borderless_lab_walls.json",
+          "src/main/resources/assets/genetic_playground/models/block/borderless_lab_walls.json",
+          "src/main/java/net/mcreator/geneticplayground/block/BorderlessLabWallsBlock.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/borderless_lab_walls.json"
+        ]
+      }
+    },
+    {
+      "name": "LabBrickFacade",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_brick_facade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/blocks/lab_brick_facade.json",
+          "src/main/resources/assets/genetic_playground/blockstates/lab_brick_facade.json",
+          "src/main/java/net/mcreator/geneticplayground/block/LabBrickFacadeBlock.java",
+          "src/main/resources/assets/genetic_playground/models/block/lab_brick_facade.json",
+          "src/main/resources/assets/genetic_playground/models/item/lab_brick_facade.json"
+        ]
+      }
+    },
+    {
+      "name": "LabWallFacade",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_wall_facade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/lab_wall_facade.json",
+          "src/main/java/net/mcreator/geneticplayground/block/LabWallFacadeBlock.java",
+          "src/main/resources/assets/genetic_playground/models/block/lab_wall_facade.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/lab_wall_facade.json",
+          "src/main/resources/assets/genetic_playground/blockstates/lab_wall_facade.json"
+        ]
+      }
+    },
+    {
+      "name": "PlasmidSynthesiserJEIType",
+      "type": "jeirecipetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_synthesiser_jei_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/jei_recipes/PlasmidSynthesiserJEITypeRecipe.java",
+          "src/main/java/net/mcreator/geneticplayground/jei_recipes/PlasmidSynthesiserJEITypeRecipeCategory.java"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "EmptyPlasmidRecipeJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_plasmid_recipe_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/recipe/empty_plasmid_recipe_jei.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "MovementspeedPlasmidRecipeJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "movementspeed_plasmid_recipe_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/recipe/movementspeed_plasmid_recipe_jei.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "PigDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/PigDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "PlasmidInjectionChamber",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_injection_chamber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/blocks/plasmid_injection_chamber.json",
+          "src/main/resources/assets/genetic_playground/models/item/plasmid_injection_chamber.json",
+          "src/main/resources/assets/genetic_playground/blockstates/plasmid_injection_chamber.json",
+          "src/main/resources/assets/genetic_playground/models/block/plasmid_injection_chamber.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/PlasmidInjectionChamberBlockEntity.java",
+          "src/main/java/net/mcreator/geneticplayground/block/PlasmidInjectionChamberBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "PlasmidInjectionChamberGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_injection_chamber_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/PlasmidInjectionChamberGUIMenu.java",
+          "src/main/java/net/mcreator/geneticplayground/client/gui/PlasmidInjectionChamberGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "PlasmidInjectorOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plasmid_injector_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/PlasmidInjectorOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MilkablePlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milkable_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/milkable_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/MilkablePlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "AluminiumBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/aluminium_block.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/aluminium_block.json",
+          "src/main/resources/assets/genetic_playground/blockstates/aluminium_block.json",
+          "src/main/java/net/mcreator/geneticplayground/block/AluminiumBlockBlock.java",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_block.json"
+        ]
+      }
+    },
+    {
+      "name": "GrazingPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grazing_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/grazing_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/GrazingPlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "MaxHealthPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_health_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/MaxHealthPlasmidItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/max_health_plasmid.json"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "MilkablePlasmidRecipeJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milkable_plasmid_recipe_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/recipe/milkable_plasmid_recipe_jei.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "GrazingPlasmidRecipeJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grazing_plasmid_recipe_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/recipe/grazing_plasmid_recipe_jei.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "MaxhealthRecipeJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maxhealth_recipe_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/recipe/maxhealth_recipe_jei.json"
+        ]
+      },
+      "path": "~/JEI"
+    },
+    {
+      "name": "FirstBlood",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/advancement/first_blood.json"
+        ]
+      },
+      "path": "~/Achievements"
+    },
+    {
+      "name": "SyringeItemHitInAir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_item_hit_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/SyringeItemHitInAirProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlayerRightClickOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_right_click_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/PlayerRightClickOnBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SyringeOfSheepBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_sheep_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfSheepBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_sheep_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "SheepCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_cell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SheepCellItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/sheep_cell.json"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "DoubleHelixWooly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_wooly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixWoolyItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_wooly.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "SheepDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sheep_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/SheepDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "WoolyPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooly_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/WoolyPlasmidItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/wooly_plasmid.json"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "EntityOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/EntityOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Commandgetgenes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commandgetgenes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CommandgetgenesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GetGenes",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_genes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/command/GetGenesCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SyringeOfEndermanEnderfluid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_enderman_enderfluid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_enderman_enderfluid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfEndermanEnderfluidItem.java"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "EndermanCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderman_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/enderman_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/EndermanCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "EndermanDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderman_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/EndermanDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "HydrophobiaDoubleHelix",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrophobia_double_helix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/HydrophobiaDoubleHelixItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/hydrophobia_double_helix.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "DoubleHelixTeleporation",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_teleporation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixTeleporationItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_teleporation.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "HydrophobiaPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrophobia_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/hydrophobia_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/HydrophobiaPlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "TeleporationPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporation_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/TeleporationPlasmidItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/teleporation_plasmid.json"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "EntityOnHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_on_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/EntityOnHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SyringeOfChickenBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_chicken_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfChickenBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_chicken_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "ChickenCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/chicken_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/ChickenCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "EggPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egg_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/egg_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/EggPlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "DoubleHelixEgg",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_egg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_egg.json",
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixEggItem.java"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "ChickenDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chicken_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/ChickenDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "LivingEntityOnHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "living_entity_on_hit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/LivingEntityOnHitProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SyringeOfRabbitBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_rabbit_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfRabbitBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_rabbit_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "RabbitCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rabbit_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/rabbit_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/RabbitCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "RabbitDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rabbit_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/RabbitDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "DoubleHelixHigherJump",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_higher_jump",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_higher_jump.json",
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixHigherJumpItem.java"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "HigherJumpPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "higher_jump_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/HigherJumpPlasmidItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/higher_jump_plasmid.json"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "DoubleHelixEndersight",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_endersight",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_endersight.json",
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixEndersightItem.java"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "EndersightPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endersight_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/endersight_plasmid.json",
+          "src/main/java/net/mcreator/geneticplayground/item/EndersightPlasmidItem.java"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "PlayerTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/PlayerTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/OnPlayerDeathProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LabFan",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_fan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/lab_fan.json",
+          "src/main/resources/assets/genetic_playground/models/block/lab_fan.json",
+          "src/main/java/net/mcreator/geneticplayground/block/LabFanBlock.java",
+          "src/main/resources/assets/genetic_playground/blockstates/lab_fan.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/lab_fan.json"
+        ]
+      }
+    },
+    {
+      "name": "LabFanBlockstate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_fan_blockstate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/lab_fan_blockstate_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "LabFanRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_fan_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/LabFanRedstoneOnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "LabFanRedstoneOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_fan_redstone_off",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/LabFanRedstoneOffProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SyringeOfHorseBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_horse_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfHorseBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_horse_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "HorseCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horse_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/horse_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/HorseCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "HorseDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horse_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/HorseDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "SyringeOfDonkeyBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_donkey_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfDonkeyBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_donkey_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "SyringeOfMuleBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_mule_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_mule_blood.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfMuleBloodItem.java"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "DonkeyCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "donkey_cell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DonkeyCellItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/donkey_cell.json"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "MuleCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mule_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/mule_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/MuleCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "DonkeyDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "donkey_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/DonkeyDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "MuleDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mule_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/MuleDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "SyringeOfCodBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_cod_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_cod_blood.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfCodBloodItem.java"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "CodCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cod_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/cod_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/CodCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "BloodPuriferCod",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifer_cod",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodPuriferCodProcedure.java"
+        ]
+      },
+      "path": "~/BloodPurifier"
+    },
+    {
+      "name": "BloodCentrifugeCod",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge_cod",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodCentrifugeCodProcedure.java"
+        ]
+      },
+      "path": "~/BloodCentrifuge"
+    },
+    {
+      "name": "CellAnalyzerCod",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cell_analyzer_cod",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CellAnalyzerCodProcedure.java"
+        ]
+      },
+      "path": "~/CellAnalyzer"
+    },
+    {
+      "name": "CodDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cod_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CodDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "DoubleHelixWaterSpeed",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_water_speed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_water_speed.json",
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixWaterSpeedItem.java"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "WaterSpeedPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_speed_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/WaterSpeedPlasmidItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/water_speed_plasmid.json"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "DoubleHelixWaterBreathing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_helix_water_breathing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/DoubleHelixWaterBreathingItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/double_helix_water_breathing.json"
+        ]
+      },
+      "path": "~/DNA"
+    },
+    {
+      "name": "WaterBreathingPlasmid",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_breathing_plasmid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/WaterBreathingPlasmidItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/water_breathing_plasmid.json"
+        ]
+      },
+      "path": "~/Plasmids"
+    },
+    {
+      "name": "LabTiles",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lab_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/lab_tiles.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/lab_tiles.json",
+          "src/main/java/net/mcreator/geneticplayground/block/LabTilesBlock.java",
+          "src/main/resources/assets/genetic_playground/blockstates/lab_tiles.json",
+          "src/main/resources/assets/genetic_playground/models/item/lab_tiles.json"
+        ]
+      }
+    },
+    {
+      "name": "CrackedLabWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cracked_lab_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/blockstates/cracked_lab_wall.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/cracked_lab_wall.json",
+          "src/main/resources/assets/genetic_playground/models/block/cracked_lab_wall.json",
+          "src/main/java/net/mcreator/geneticplayground/block/CrackedLabWallBlock.java",
+          "src/main/resources/assets/genetic_playground/models/item/cracked_lab_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "SyringeOfSalmonBlood",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_of_salmon_blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/item/SyringeOfSalmonBloodItem.java",
+          "src/main/resources/assets/genetic_playground/models/item/syringe_of_salmon_blood.json"
+        ]
+      },
+      "path": "~/Blood"
+    },
+    {
+      "name": "SalmonCell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salmon_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/salmon_cell.json",
+          "src/main/java/net/mcreator/geneticplayground/item/SalmonCellItem.java"
+        ]
+      },
+      "path": "~/Cells"
+    },
+    {
+      "name": "BloodPuriferSalmon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_purifer_salmon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodPuriferSalmonProcedure.java"
+        ]
+      },
+      "path": "~/BloodPurifier"
+    },
+    {
+      "name": "BloodCentrifugeSalmon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_centrifuge_salmon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/BloodCentrifugeSalmonProcedure.java"
+        ]
+      },
+      "path": "~/BloodCentrifuge"
+    },
+    {
+      "name": "CellAnalyzerSalmon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cell_analyzer_salmon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CellAnalyzerSalmonProcedure.java"
+        ]
+      },
+      "path": "~/CellAnalyzer"
+    },
+    {
+      "name": "SalmonDNAExtraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salmon_dna_extraction",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/SalmonDNAExtractionProcedure.java"
+        ]
+      },
+      "path": "~/DNAExtractor"
+    },
+    {
+      "name": "WarningSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning_sign",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/WarningSignBlock.java",
+          "src/main/resources/assets/genetic_playground/models/item/warning_sign.json",
+          "src/main/resources/assets/genetic_playground/models/block/warning_sign.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/warning_sign.json",
+          "src/main/resources/assets/genetic_playground/blockstates/warning_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "WarningSignOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning_sign_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/WarningSignOnBlockRightClickedProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "WarningSignBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warning_sign_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/warning_sign_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/warning_sign_blockstates_blockstate_3.json",
+          "src/main/resources/assets/genetic_playground/models/block/warning_sign_blockstates_blockstate_0.json",
+          "src/main/resources/assets/genetic_playground/models/block/warning_sign_blockstates_blockstate_2.json"
+        ]
+      }
+    },
+    {
+      "name": "BiohazardSign",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biohazard_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/genetic_playground/loot_table/blocks/biohazard_sign.json",
+          "src/main/resources/assets/genetic_playground/blockstates/biohazard_sign.json",
+          "src/main/resources/assets/genetic_playground/models/item/biohazard_sign.json",
+          "src/main/resources/assets/genetic_playground/models/block/biohazard_sign.json",
+          "src/main/java/net/mcreator/geneticplayground/block/BiohazardSignBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BiohazardSignBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biohazard_sign_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/biohazard_sign_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/biohazard_sign_blockstates_blockstate_0.json",
+          "src/main/resources/assets/genetic_playground/models/block/biohazard_sign_blockstates_blockstate_3.json",
+          "src/main/resources/assets/genetic_playground/models/block/biohazard_sign_blockstates_blockstate_2.json"
+        ]
+      }
+    },
+    {
+      "name": "FissionPowerPlantGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fission_power_plant_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/world/inventory/FissionPowerPlantGUIMenu.java",
+          "src/main/java/net/mcreator/geneticplayground/client/gui/FissionPowerPlantGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "FissionPowerPlantController",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fission_power_plant_controller",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/fission_power_plant_controller.json",
+          "src/main/resources/assets/genetic_playground/blockstates/fission_power_plant_controller.json",
+          "src/main/java/net/mcreator/geneticplayground/block/FissionPowerPlantControllerBlock.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/fission_power_plant_controller.json",
+          "src/main/resources/assets/genetic_playground/models/item/fission_power_plant_controller.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/FissionPowerPlantControllerBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "FissionPowerPlantTanks",
+      "type": "fluid_tanks",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fission_power_plant_tanks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "FissionPowerPlantControllerRedstoneOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fission_power_plant_controller_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/FissionPowerPlantControllerRedstoneOnProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperPiping",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_piping",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/block/CopperPipingBlock.java",
+          "src/main/resources/assets/genetic_playground/models/item/copper_piping.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/copper_piping.json",
+          "src/main/resources/assets/genetic_playground/blockstates/copper_piping.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/CopperPipingBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CopperPipingBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_piping_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_9.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_11.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_8.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_4.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_0.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_3.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_7.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_10.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_5.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_2.json",
+          "src/main/resources/assets/genetic_playground/models/block/copper_piping_blockstates_blockstate_6.json"
+        ]
+      }
+    },
+    {
+      "name": "CopperPipingNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_piping_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/CopperPipingNeighbourBlockChangesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldCable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable.json",
+          "src/main/java/net/mcreator/geneticplayground/block/GoldCableBlock.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/gold_cable.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/GoldCableBlockEntity.java",
+          "src/main/resources/assets/genetic_playground/models/item/gold_cable.json",
+          "src/main/resources/assets/genetic_playground/blockstates/gold_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldCableBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_cable_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_6.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_9.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_10.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_14.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_0.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_8.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_5.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_12.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_3.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_15.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_4.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_11.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_13.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_2.json",
+          "src/main/resources/assets/genetic_playground/models/block/gold_cable_blockstates_blockstate_7.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldCableNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_cable_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/GoldCableNeighbourBlockChangesProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldCableOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_cable_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/GoldCableOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AluminiumCable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable.json",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/aluminium_cable.json",
+          "src/main/resources/assets/genetic_playground/models/item/aluminium_cable.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/AluminiumCableBlockEntity.java",
+          "src/main/java/net/mcreator/geneticplayground/block/AluminiumCableBlock.java",
+          "src/main/resources/assets/genetic_playground/blockstates/aluminium_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "AluminiumCableBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aluminium_cable_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_4.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_8.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_13.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_7.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_2.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_5.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_9.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_0.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_14.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_3.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_11.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_10.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_15.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_6.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/aluminium_cable_blockstates_blockstate_12.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteCable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_cable",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/netherite_cable.json",
+          "src/main/java/net/mcreator/geneticplayground/block/NetheriteCableBlock.java",
+          "src/main/resources/assets/genetic_playground/blockstates/netherite_cable.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/NetheriteCableBlockEntity.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/netherite_cable.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteCableBlockstates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_cable_blockstates",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_15.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_6.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_12.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_7.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_3.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_11.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_0.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_14.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_8.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_5.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_2.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_1.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_9.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_4.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_10.json",
+          "src/main/resources/assets/genetic_playground/models/block/netherite_cable_blockstates_blockstate_13.json"
+        ]
+      }
+    },
+    {
+      "name": "ElectricPump",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pump",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/genetic_playground/models/item/electric_pump.json",
+          "src/main/java/net/mcreator/geneticplayground/block/entity/ElectricPumpBlockEntity.java",
+          "src/main/resources/data/genetic_playground/loot_table/blocks/electric_pump.json",
+          "src/main/java/net/mcreator/geneticplayground/block/ElectricPumpBlock.java",
+          "src/main/resources/assets/genetic_playground/models/block/electric_pump.json",
+          "src/main/resources/assets/genetic_playground/blockstates/electric_pump.json"
+        ]
+      }
+    },
+    {
+      "name": "ElectricPumpOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pump_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/ElectricPumpOnTickUpdateProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ElectricPumpOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_pump_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/geneticplayground/procedures/ElectricPumpOnBlockRightClickedProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Endersight",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "HigherJump",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "EggGene",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "TeleportationGene",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "Hydrophobia",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "GrazingGene",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "MilkableGene",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "WoolyGene",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "TimerWool",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "TimerEgg",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "Waterbreathing",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "syringe.stab",
+      "files": [
+        "flesh-impact-266316_1"
+      ],
+      "category": "neutral",
+      "subtitle": "Syringe Stabs"
+    },
+    {
+      "name": "centrifuge.spin",
+      "files": [
+        "434098__devern__wind-turbine_1"
+      ],
+      "category": "neutral",
+      "subtitle": "Centrifuge Spins"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:SterileBlood",
+      "~CUSTOM:PlasmaResidue"
+    ],
+    "ITEMS:geneticplayground:blood": [
+      "CUSTOM:SyringeOfPigBlood",
+      "CUSTOM:SyringeOfCowBlood",
+      "CUSTOM:SyringeOfSterileBlood",
+      "CUSTOM:SyringeOfSheepBlood",
+      "CUSTOM:SyringeOfEndermanEnderfluid",
+      "CUSTOM:SyringeOfChickenBlood",
+      "CUSTOM:SyringeOfRabbitBlood",
+      "CUSTOM:SyringeOfHorseBlood",
+      "CUSTOM:SyringeOfDonkeyBlood",
+      "CUSTOM:SyringeOfMuleBlood",
+      "CUSTOM:SyringeOfCodBlood",
+      "CUSTOM:SyringeOfSalmonBlood"
+    ],
+    "ITEMS:geneticplayground:cells": [
+      "CUSTOM:PigCell",
+      "CUSTOM:CowCell",
+      "CUSTOM:SheepCell",
+      "CUSTOM:EndermanCell",
+      "CUSTOM:ChickenCell",
+      "CUSTOM:RabbitCell",
+      "CUSTOM:HorseCell",
+      "CUSTOM:DonkeyCell",
+      "CUSTOM:MuleCell",
+      "CUSTOM:CodCell",
+      "CUSTOM:SalmonCell"
+    ],
+    "ITEMS:geneticplayground:doublehelix": [
+      "CUSTOM:DoubleHelixMovementSpeed",
+      "CUSTOM:DoubleHelixMilkable",
+      "CUSTOM:DoubleHelixMaxHealth",
+      "CUSTOM:DoubleHelixGrazing",
+      "CUSTOM:DoubleHelixFailed",
+      "CUSTOM:DoubleHelixWooly",
+      "CUSTOM:HydrophobiaDoubleHelix",
+      "CUSTOM:DoubleHelixTeleporation",
+      "CUSTOM:DoubleHelixEgg",
+      "CUSTOM:DoubleHelixHigherJump",
+      "CUSTOM:DoubleHelixEndersight",
+      "CUSTOM:DoubleHelixWaterSpeed",
+      "CUSTOM:DoubleHelixWaterBreathing"
+    ],
+    "ITEMS:geneticplayground:plasmids": [
+      "CUSTOM:EmptyPlasmid",
+      "CUSTOM:MovementSpeedPlasmid",
+      "CUSTOM:MilkablePlasmid",
+      "CUSTOM:GrazingPlasmid",
+      "CUSTOM:MaxHealthPlasmid",
+      "CUSTOM:WoolyPlasmid",
+      "CUSTOM:HydrophobiaPlasmid",
+      "CUSTOM:TeleporationPlasmid",
+      "CUSTOM:EggPlasmid",
+      "CUSTOM:HigherJumpPlasmid",
+      "CUSTOM:EndersightPlasmid",
+      "CUSTOM:WaterSpeedPlasmid",
+      "CUSTOM:WaterBreathingPlasmid"
+    ],
+    "BLOCKS:geneticplayground:hasfluidtank": [
+      "CUSTOM:BloodPurifier",
+      "CUSTOM:BloodCentrifuge",
+      "CUSTOM:FissionPowerPlantController",
+      "CUSTOM:CopperPiping",
+      "CUSTOM:ElectricPump"
+    ],
+    "BLOCKS:geneticplayground:femachines": [
+      "CUSTOM:BloodPurifier",
+      "CUSTOM:BloodCentrifuge",
+      "CUSTOM:CreativeEnergyBlock",
+      "CUSTOM:CellAnalyzer",
+      "CUSTOM:DNAExtractor",
+      "CUSTOM:PlasmidSynthesiser",
+      "CUSTOM:PlasmidInjectionChamber",
+      "CUSTOM:FissionPowerPlantController",
+      "CUSTOM:GoldCable",
+      "CUSTOM:AluminiumCable",
+      "CUSTOM:NetheriteCable",
+      "CUSTOM:ElectricPump"
+    ],
+    "BLOCKS:geneticplayground:fegenerator": []
+  },
+  "tab_element_order": {
+    "CUSTOM:GeneticPlayground": [
+      "BloodPurifier",
+      "BloodCentrifuge",
+      "CellAnalyzer",
+      "DNAExtractor",
+      "PlasmidInjectionChamber",
+      "PlasmidSynthesiser",
+      "AluminiumBlock",
+      "LabFan",
+      "LabBrickWalls",
+      "LabWalls",
+      "BorderlessLabWalls",
+      "LabTiles",
+      "CrackedLabWall",
+      "CreativeEnergyBlock",
+      "LabBrickFacade",
+      "LabWallFacade",
+      "WarningSign",
+      "BiohazardSign",
+      "PlasmaResidue",
+      "SterileBlood",
+      "MachineSpeedUpgrade",
+      "Syringe",
+      "SyringeOfSterileBlood",
+      "SyringeOfPigBlood",
+      "SyringeOfCowBlood",
+      "SyringeOfSheepBlood",
+      "SyringeOfChickenBlood",
+      "SyringeOfEndermanEnderfluid",
+      "SyringeOfRabbitBlood",
+      "SyringeOfHorseBlood",
+      "SyringeOfDonkeyBlood",
+      "SyringeOfMuleBlood",
+      "SyringeOfCodBlood",
+      "SyringeOfSalmonBlood",
+      "PigCell",
+      "CowCell",
+      "SheepCell",
+      "EndermanCell",
+      "ChickenCell",
+      "RabbitCell",
+      "HorseCell",
+      "DonkeyCell",
+      "MuleCell",
+      "CodCell",
+      "SalmonCell",
+      "DoubleHelixFailed",
+      "DoubleHelixMovementSpeed",
+      "DoubleHelixMaxHealth",
+      "DoubleHelixMilkable",
+      "DoubleHelixGrazing",
+      "DoubleHelixWooly",
+      "DoubleHelixTeleporation",
+      "HydrophobiaDoubleHelix",
+      "DoubleHelixEndersight",
+      "DoubleHelixEgg",
+      "DoubleHelixHigherJump",
+      "DoubleHelixWaterBreathing",
+      "DoubleHelixWaterSpeed",
+      "EmptyPlasmid",
+      "MovementSpeedPlasmid",
+      "MilkablePlasmid",
+      "GrazingPlasmid",
+      "MaxHealthPlasmid",
+      "WoolyPlasmid",
+      "TeleporationPlasmid",
+      "HydrophobiaPlasmid",
+      "EndersightPlasmid",
+      "EggPlasmid",
+      "HigherJumpPlasmid",
+      "WaterSpeedPlasmid",
+      "WaterBreathingPlasmid",
+      "FissionPowerPlantController",
+      "CopperPiping",
+      "GoldCable",
+      "AluminiumCable",
+      "NetheriteCable",
+      "ElectricPump"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.genetic_playground.syringe": "Syringe §7(Empty)",
+      "item_group.genetic_playground.genetic_playground": "Genetic Playground",
+      "item.genetic_playground.syringe_of_pig_blood": "Syringe §c(Pig Blood)",
+      "item.genetic_playground.syringe_of_pig_blood.description_0": "",
+      "item.genetic_playground.syringe.description_0": "",
+      "subtitles.syringe.stab": "Syringe Stabs",
+      "item.genetic_playground.syringe.description_1": "§7☛ No Blood",
+      "item.genetic_playground.syringe_of_pig_blood.description_1": "§c☛ Pig Blood",
+      "item.genetic_playground.syringe_of_cow_blood": "Syringe §c(Cow Blood)",
+      "item.genetic_playground.syringe_of_cow_blood.description_1": "§c☛ Cow Blood",
+      "item.genetic_playground.syringe_of_cow_blood.description_0": "",
+      "item.genetic_playground.creative_energy": "Creative Energy",
+      "item.genetic_playground.blood_purifier": "Blood Purification Chamber",
+      "gui.genetic_playground.blood_purifier_gui.tooltip_energy": "Energy",
+      "gui.genetic_playground.blood_purifier_gui.label_blood_purification_chamber": "Blood Purification Chamber",
+      "fluid.genetic_playground.plasma_residue": "Plasma Residue",
+      "item.genetic_playground.plasma_residue_bucket": "Plasma Residue Bucket",
+      "block.genetic_playground.plasma_residue": "Plasma Residue",
+      "fluid_type.genetic_playground.plasma_residue": "Plasma Residue",
+      "gui.genetic_playground.blood_purifier_gui.tooltip_empty_bucket_requires_1000mb": "Empty Bucket - Requires 1000mb",
+      "gui.genetic_playground.blood_purifier_gui.tooltip_bucket_of_plasma_residue": "Bucket of Plasma Residue",
+      "item.genetic_playground.machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.blood_purifier_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.blood_purifier_gui.tooltip_ssessl_tank_is_full": "§e§l⚠️ Tank is full ⚠️",
+      "gui.genetic_playground.blood_centrifuge_gui.tooltip_empty_bucket_requires_1000mb": "Empty Bucket - Requires 1000mb",
+      "gui.genetic_playground.blood_centrifuge_gui.tooltip_bucket_of_plasma_residue": "Bucket of Plasma Residue",
+      "gui.genetic_playground.blood_centrifuge_gui.label_blood_purification_chamber": "Blood Centrifuge",
+      "gui.genetic_playground.blood_centrifuge_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "item.genetic_playground.pig_cell": "Cell §c(Pig)",
+      "item.genetic_playground.cow_cell": "Cell §c(Cow)",
+      "fluid_type.genetic_playground.sterile_blood": "Sterile Blood",
+      "block.genetic_playground.sterile_blood": "Sterile Blood",
+      "fluid.genetic_playground.sterile_blood": "Sterile Blood",
+      "item.genetic_playground.sterile_blood_bucket": "Sterile Blood Bucket",
+      "item.genetic_playground.blood_centrifuge": "Blood Centrifuge",
+      "subtitles.centrifuge.spin": "Centrifuge Spins",
+      "item.genetic_playground.cell_analyzer": "Cell Analyzer",
+      "gui.genetic_playground.cell_analyzer_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.cell_analyzer_gui.label_blood_purification_chamber": "Cell Analyzer",
+      "gui.genetic_playground.cell_analyzer_gui.tooltip_empty_bucket_requires_1000mb": "Empty Bucket - Requires 1000mb",
+      "block.genetic_playground.blood_purifier": "Blood Purification Chamber",
+      "block.genetic_playground.blood_centrifuge": "Blood Centrifuge",
+      "block.genetic_playground.creative_energy_block": "Creative Energy",
+      "block.genetic_playground.cell_analyzer": "Cell Analyzer",
+      "gui.genetic_playground.blood_purifier_gui.tooltip_ss3_requires_and_uses_255_kfe": "§3⚡ Requires and uses 25.5 kFE ⚡ ",
+      "gui.genetic_playground.blood_centrifuge_gui.tooltip_ss3_requires_and_uses_40_kfe": "§3⚡ Requires and uses 40 kFE ⚡ ",
+      "gui.genetic_playground.cell_analyzer_gui.tooltip_ss3_requires_and_uses_255_kfe": "§3⚡ Requires and uses 80 kFE ⚡ ",
+      "gui.genetic_playground.wireless_energy_gui.tooltip_the_code_which_links_energy_modu": "Wireless energy connection code.",
+      "gui.genetic_playground.wireless_energy_gui.label_getcode": "[getcode]",
+      "block.genetic_playground.dna_extractor": "DNA Extractor",
+      "gui.genetic_playground.dna_extractor_gui.label_blood_purification_chamber": "DNA Extractor",
+      "gui.genetic_playground.dna_extractor_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.dna_extractor_gui.tooltip_ss3_requires_and_uses_255_kfe": "§3⚡ Requires and uses 125kFE ⚡ ",
+      "item.genetic_playground.double_helix_movement_speed": "Double Helix §c(Movement Speed)",
+      "item.genetic_playground.double_helix_milkable": "Double Helix §a(Milkable)",
+      "item.genetic_playground.double_helix_max_health": "Double Helix §c(Max Health)",
+      "item.genetic_playground.double_helix_grazing": "Double Helix §a(Grazing)",
+      "item.genetic_playground.double_helix_failed": "Double Helix §7(Failed)",
+      "item.genetic_playground.syringe_of_sterile_blood": "Syringe §7(Sterile)",
+      "block.genetic_playground.plasmid_synthesiser": "Plasmid Synthesiser",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_ss3_requires_and_uses_255_kfe": "§3⚡ Requires and uses 125kFE ⚡ ",
+      "gui.genetic_playground.plasmid_synthesiser_gui.label_blood_purification_chamber": "Plasmid Synthesiser",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_ss3_requires_and_uses_350kfe": "§3⚡ Requires and uses 350kFE ⚡ ",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_ss3_requires_and_uses_350kfe1": "§3⚡ Requires and uses 350kFE ⚡ ",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_plasmid": "Plasmid",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_ss3_requires_and_uses_350kfe2": "§3⚡ Requires and uses 350kFE ⚡ ",
+      "gui.genetic_playground.plasmid_synthesiser_gui.tooltip_ss3_requires_and_uses_350kfe3": "§3⚡ Requires and uses 350kFE ⚡ ",
+      "item.genetic_playground.empty_plasmid": "Plasmid §7(Empty)",
+      "item.genetic_playground.movement_speed_plasmid": "Plasmid §c(Speed)",
+      "entity.genetic_playground.cultivated_creeper": "Cultivated Creeper",
+      "item.genetic_playground.cultivated_creeper_spawn_egg": "Cultivated Creeper Spawn Egg",
+      "block.genetic_playground.lab_brick_walls": "Lab Brick Walls",
+      "block.genetic_playground.lab_walls": "Lab Walls",
+      "block.genetic_playground.borderless_lab_walls": "Borderless Lab Walls",
+      "block.genetic_playground.lab_brick_facade": "Lab Brick Facade",
+      "block.genetic_playground.lab_wall_facade": "Lab Wall Facade",
+      "block.genetic_playground.plasmid_injection_chamber": "Plasmid Injection Chamber",
+      "gui.genetic_playground.plasmid_injection_chamber_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.plasmid_injection_chamber_gui.label_blood_purification_chamber": "Plasmid Injection Chamber",
+      "gui.genetic_playground.plasmid_injection_chamber_gui.tooltip_ss3_requires_and_uses_255_kfe": "§3⚡ Requires and uses 350kFE ⚡ ",
+      "item.genetic_playground.milkable_plasmid": "Plasmid §c(Milkable)",
+      "block.genetic_playground.aluminium_block": "Aluminium Block",
+      "item.genetic_playground.grazing_plasmid": "Plasmid §c(Grazing)",
+      "item.genetic_playground.max_health_plasmid": "Plasmid §c(Max Health)",
+      "advancements.first_blood.title": "Warning: SHARPS!",
+      "advancements.first_blood.descr": "Obtain a Syringe",
+      "item.genetic_playground.syringe_of_sheep_blood": "Syringe §c(Sheep Blood)",
+      "item.genetic_playground.sheep_cell": "Cell §c(Sheep)",
+      "item.genetic_playground.double_helix_wooly": "Double Helix §a(Wooly)",
+      "item.genetic_playground.wooly_plasmid": "Plasmid §c(Wooly)",
+      "item.genetic_playground.syringe_of_enderman_enderfluid": "Syringe §c(Enderman Blood)",
+      "item.genetic_playground.enderman_cell": "Cell §5(Enderman)",
+      "item.genetic_playground.hydrophobia_double_helix": "Double Helix §5(Hydrophobia)",
+      "item.genetic_playground.double_helix_teleporation": "Double Helix §5(Teleporation)",
+      "item.genetic_playground.hydrophobia_plasmid": "Plasmid §5(Hydrophobia)",
+      "item.genetic_playground.teleporation_plasmid": "Plasmid §5(Teleporation)",
+      "item.genetic_playground.syringe_of_chicken_blood": "Syringe §c(Chicken Blood)",
+      "item.genetic_playground.chicken_cell": "Cell §c(Chicken)",
+      "item.genetic_playground.egg_plasmid": "Plasmid §c(Egg Prod.)",
+      "item.genetic_playground.double_helix_egg": "Double Helix §a(Egg Prod.)",
+      "item.genetic_playground.syringe_of_rabbit_blood": "Syringe §c(Rabbit Blood)",
+      "item.genetic_playground.rabbit_cell": "Cell §c(Rabbit)",
+      "item.genetic_playground.double_helix_higher_jump": "Double Helix §a(Higher Jump)",
+      "item.genetic_playground.higher_jump_plasmid": "Plasmid §c(Higher Jump)",
+      "item.genetic_playground.double_helix_endersight": "Double Helix §5(Endersight)",
+      "item.genetic_playground.endersight_plasmid": "Plasmid §5(Endersight)",
+      "block.genetic_playground.lab_fan": "Lab Fan",
+      "block.genetic_playground.lab_fan.description_0": "When powered by redstone, it spins!",
+      "item.genetic_playground.syringe_of_horse_blood": "Syringe §c(Horse Blood)",
+      "item.genetic_playground.horse_cell": "Cell §c(Horse)",
+      "item.genetic_playground.syringe_of_donkey_blood": "Syringe §c(Donkey Blood)",
+      "item.genetic_playground.syringe_of_mule_blood": "Syringe §c(Mule Blood)",
+      "item.genetic_playground.donkey_cell": "Cell §c(Donkey)",
+      "item.genetic_playground.mule_cell": "Cell §c(Mule)",
+      "item.genetic_playground.syringe_of_cod_blood": "Syringe §c(Cod Blood)",
+      "item.genetic_playground.cod_cell": "Cell §c(Cod)",
+      "item.genetic_playground.double_helix_water_speed": "Double Helix §a(Water Speed)",
+      "item.genetic_playground.water_speed_plasmid": "Plasmid §c(Water Speed)",
+      "item.genetic_playground.double_helix_water_breathing": "Double Helix §a(Water Breathing)",
+      "item.genetic_playground.water_breathing_plasmid": "Plasmid §c(Water Breathing)",
+      "block.genetic_playground.lab_tiles": "Lab Tiles",
+      "block.genetic_playground.cracked_lab_wall": "Cracked Lab Wall",
+      "item.genetic_playground.syringe_of_salmon_blood": "Syringe §c(Salmon Blood)",
+      "item.genetic_playground.salmon_cell": "Cell §c(Salmon)",
+      "block.genetic_playground.warning_sign": "Warning Sign",
+      "block.genetic_playground.biohazard_sign": "Warning Sign",
+      "gui.genetic_playground.fission_power_plant_gui.tooltip_machine_speed_upgrade": "Machine Speed Upgrade",
+      "gui.genetic_playground.fission_power_plant_gui.tooltip_ss3_requires_and_uses_255_kfe": "§3⚡ Requires and uses 25.5 kFE ⚡ ",
+      "gui.genetic_playground.fission_power_plant_gui.tooltip_empty_bucket_requires_1000mb": "Empty Bucket - Requires 1000mb",
+      "gui.genetic_playground.fission_power_plant_gui.label_blood_purification_chamber": "Fission Power Plant",
+      "block.genetic_playground.fission_power_plant_controller": "Fission Power Plant Controller",
+      "gui.genetic_playground.fission_power_plant_gui.label_fet": "FE/t:",
+      "gui.genetic_playground.fission_power_plant_gui.tooltip_radioactive": "Radioactive",
+      "block.genetic_playground.copper_piping": "Copper Piping",
+      "block.genetic_playground.gold_cable": "Gold Cable",
+      "block.genetic_playground.aluminium_cable": "Aluminium Cable",
+      "block.genetic_playground.netherite_cable": "Netherite Cable",
+      "block.genetic_playground.electric_pump": "Electric Pump"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModTabs.java",
+      "src/main/java/net/mcreator/geneticplayground/GeneticPlaygroundMod.java",
+      "src/main/resources/assets/genetic_playground/sounds.json",
+      "src/main/java/net/mcreator/geneticplayground/network/GeneticPlaygroundModVariables.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModSounds.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModFluidTypes.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModFluids.java",
+      "src/main/java/net/mcreator/geneticplayground/utils/FluidStackWidget.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModScreens.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModMenus.java",
+      "src/main/java/net/mcreator/geneticplayground/network/MenuStateUpdateMessage.java",
+      "src/main/resources/data/genetic_playground/tags/item/jei_empty_tag.json",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModJeiPlugin.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModRecipeTypes.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModBlocks.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModBlockEntities.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModItems.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModEntityRenderers.java",
+      "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModEntities.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "DNAExtractor",
+        "children": []
+      },
+      {
+        "name": "JEI",
+        "children": []
+      },
+      {
+        "name": "Achievements",
+        "children": []
+      },
+      {
+        "name": "Blood",
+        "children": []
+      },
+      {
+        "name": "Cells",
+        "children": []
+      },
+      {
+        "name": "Plasmids",
+        "children": []
+      },
+      {
+        "name": "DNA",
+        "children": []
+      },
+      {
+        "name": "BloodPurifier",
+        "children": []
+      },
+      {
+        "name": "BloodCentrifuge",
+        "children": []
+      },
+      {
+        "name": "CellAnalyzer",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "genetic_playground",
+    "modName": "Genetic Playground",
+    "version": "1.0.0",
+    "description": "Genetic Playground adds genetic engineering to Minecraft 1.21.1, originally made for the CurseForge modjam 2025. ",
+    "author": "IcyDragonTheNoob",
+    "websiteURL": "https://discord.gg/36RxX8PGHC",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "logogeneticplayground",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "jei"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Mod made by IcyDragonTheNoob, sounds from Freesounds.com, made with MCreator by PYLO.",
+    "modElementsPackage": "net.mcreator.geneticplayground"
+  },
+  "mcreatorVersion": 202500228610
+}

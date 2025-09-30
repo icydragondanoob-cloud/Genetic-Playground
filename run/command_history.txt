@@ -1,0 +1,50 @@
+/locate biome #minecraft:is_forest
+/tp @s 243 83 849
+/kill
+/gamemode creative
+/weather clear
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/time set night
+/gamemode creative
+/time set day
+/kill
+/gamemode survival
+/kill
+/gamemode creative
+/kill
+/attribute dev minecraft:generic.movement_speed get
+/attribute dev minecraft:generic.movement_speed base set 0.10000000149011612
+/kill
+/weather clear
+/warden_spawn_tracker
+/warden_spawn_tracker set 3
+/gamemode survival
+/give dev minecraft:netherite_sword
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/effect clear
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/attribute Dev neoforge:swim_speed base set 5
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/give dev minecraft:debug_stick
+/time set day
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creativeq
+/gamemode creative
+/time set day
+/gamemode survival
+/gamemode creative
+/time set day
+/effect give dev minecraft:dolphins_grace infinite

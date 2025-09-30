@@ -1,0 +1,107 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "plasmidsynthesiserjei.png",
+    "width": 175,
+    "height": 115,
+    "icon": {
+      "value": "CUSTOM:PlasmidSynthesiser"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:PlasmidSynthesiser"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "title": "Plasmid Synthesiser JEI Type",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 134,
+        "y": 71,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 134,
+        "y": 53,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 134,
+        "y": 35,
+        "slotid": 2
+      },
+      {
+        "type": "INPUT",
+        "x": 116,
+        "y": 17,
+        "slotid": 3
+      },
+      {
+        "type": "INPUT",
+        "x": 98,
+        "y": 17,
+        "slotid": 4
+      },
+      {
+        "type": "INPUT",
+        "x": 80,
+        "y": 17,
+        "slotid": 5
+      },
+      {
+        "type": "INPUT",
+        "x": 62,
+        "y": 35,
+        "slotid": 6
+      },
+      {
+        "type": "INPUT",
+        "x": 62,
+        "y": 53,
+        "slotid": 7
+      },
+      {
+        "type": "INPUT",
+        "x": 62,
+        "y": 71,
+        "slotid": 8
+      },
+      {
+        "type": "INPUT",
+        "x": 80,
+        "y": 89,
+        "slotid": 9
+      },
+      {
+        "type": "INPUT",
+        "x": 98,
+        "y": 89,
+        "slotid": 10
+      },
+      {
+        "type": "INPUT",
+        "x": 116,
+        "y": 89,
+        "slotid": 11
+      },
+      {
+        "type": "INPUT",
+        "x": 136,
+        "y": 15,
+        "slotid": 12
+      },
+      {
+        "type": "OUTPUT",
+        "x": 98,
+        "y": 53,
+        "slotid": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cablealuminium",
+        "1": "cablemiddlealuminium"
+      },
+      "name": "default"
+    }
+  }
+}

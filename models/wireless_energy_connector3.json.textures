@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "back",
+        "1": "middleye2",
+        "2": "fronteye"
+      },
+      "name": "default"
+    }
+  }
+}

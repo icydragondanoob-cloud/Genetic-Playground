@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Genetic Playground",
+    "icon": {
+      "value": "CUSTOM:Syringe"
+    },
+    "showSearch": false
+  }
+}

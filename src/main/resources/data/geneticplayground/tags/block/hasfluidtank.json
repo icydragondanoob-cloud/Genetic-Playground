@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "genetic_playground:blood_centrifuge",
+    "genetic_playground:copper_piping",
+    "genetic_playground:electric_pump",
+    "genetic_playground:blood_purifier",
+    "genetic_playground:fission_power_plant_controller"
+  ]
+}

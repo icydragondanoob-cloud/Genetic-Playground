@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "genetic_playground:double_helix_failed",
+    "genetic_playground:hydrophobia_double_helix",
+    "genetic_playground:double_helix_teleporation",
+    "genetic_playground:double_helix_higher_jump",
+    "genetic_playground:double_helix_egg",
+    "genetic_playground:double_helix_milkable",
+    "genetic_playground:double_helix_endersight",
+    "genetic_playground:double_helix_max_health",
+    "genetic_playground:double_helix_water_speed",
+    "genetic_playground:double_helix_grazing",
+    "genetic_playground:double_helix_wooly",
+    "genetic_playground:double_helix_movement_speed",
+    "genetic_playground:double_helix_water_breathing"
+  ]
+}
