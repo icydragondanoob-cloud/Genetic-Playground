@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "genetic_playground:needle"
+    },
+    "title": {
+      "translate": "advancements.finding_a_needle_in_a_haystack.title"
+    },
+    "description": {
+      "translate": "advancements.finding_a_needle_in_a_haystack.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "finding_a_needle_in_a_haystack_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "genetic_playground:needle"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "genetic_playground:genetic_playground_achievement"
+}

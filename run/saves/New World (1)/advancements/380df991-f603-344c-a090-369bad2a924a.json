@@ -1,267 +1,172 @@
 {
-  "minecraft:recipes/decorations/crafting_table": {
+  "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
-      "unlock_right_away": "2025-09-21 19:33:41 +0100"
+      "in_water": "2025-10-11 21:52:43 +0100"
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
+  "minecraft:recipes/building_blocks/oak_slab": {
     "criteria": {
-      "minecraft:old_growth_pine_taiga": "2025-09-21 19:34:02 +0100",
-      "minecraft:taiga": "2025-09-21 19:33:42 +0100",
-      "minecraft:meadow": "2025-09-21 19:46:37 +0100"
-    },
-    "done": false
-  },
-  "minecraft:recipes/decorations/chest": {
-    "criteria": {
-      "has_lots_of_items": "2025-09-21 19:34:45 +0100"
+      "has_planks": "2025-10-11 22:08:57 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/spruce_planks": {
+  "minecraft:recipes/decorations/oak_sign": {
     "criteria": {
-      "has_logs": "2025-09-21 19:43:25 +0100"
+      "has_planks": "2025-10-11 22:08:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2025-10-11 22:08:57 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:first_blood": {
+    "criteria": {
+      "first_blood_0": "2025-10-11 21:52:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2025-10-11 22:08:57 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/charcoal": {
     "criteria": {
-      "has_log": "2025-09-21 19:43:25 +0100"
+      "has_log": "2025-10-11 22:09:01 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/spruce_wood": {
+  "minecraft:recipes/redstone/oak_pressure_plate": {
     "criteria": {
-      "has_log": "2025-09-21 19:43:25 +0100"
+      "has_planks": "2025-10-11 22:08:57 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/spruce_button": {
+  "minecraft:recipes/redstone/oak_door": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
+      "has_planks": "2025-10-11 22:08:57 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/redstone/spruce_pressure_plate": {
+  "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
+      "unlock_right_away": "2025-10-11 21:51:29 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/spruce_sign": {
+  "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_trapdoor": {
-    "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_door": {
-    "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/spruce_fence_gate": {
-    "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
+      "has_lots_of_items": "2025-10-11 21:55:38 +0100"
     },
     "done": true
   },
   "minecraft:recipes/misc/stick": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
+      "has_planks": "2025-10-11 22:08:57 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/barrel": {
+  "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
+      "has_planks": "2025-10-11 22:08:57 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/spruce_fence": {
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
+      "in_water": "2025-10-11 21:52:43 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/spruce_stairs": {
+  "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/spruce_slab": {
-    "criteria": {
-      "has_planks": "2025-09-21 19:43:44 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/root": {
-    "criteria": {
-      "crafting_table": "2025-09-21 19:43:51 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/ladder": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/campfire": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_hoe": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_pickaxe": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_axe": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/wooden_shovel": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/wooden_sword": {
-    "criteria": {
-      "has_stick": "2025-09-21 19:43:55 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/lever": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/stone_sword": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/cobblestone_wall": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_pickaxe": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_axe": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/mine_stone": {
-    "criteria": {
-      "get_stone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/furnace": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_slab": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/stone": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cobblestone_stairs": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_hoe": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_shovel": {
-    "criteria": {
-      "has_cobblestone": "2025-09-21 19:44:01 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/torch": {
-    "criteria": {
-      "has_stone_pickaxe": "2025-09-21 19:44:10 +0100"
-    },
-    "done": true
-  },
-  "minecraft:story/upgrade_tools": {
-    "criteria": {
-      "stone_pickaxe": "2025-09-21 19:44:10 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/coal_block": {
-    "criteria": {
-      "has_coal": "2025-09-21 19:44:35 +0100"
+      "in_water": "2025-10-11 21:52:43 +0100"
     },
     "done": true
   },
   "minecraft:adventure/root": {
     "criteria": {
-      "killed_by_something": "2025-09-21 19:46:29 +0100"
+      "killed_something": "2025-10-11 22:04:28 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2025-10-11 22:08:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2025-10-11 22:09:01 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:flower_forest": "2025-10-11 21:51:30 +0100",
+      "minecraft:river": "2025-10-11 22:01:41 +0100",
+      "minecraft:meadow": "2025-10-11 22:08:49 +0100",
+      "minecraft:plains": "2025-10-11 21:57:46 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2025-10-11 21:52:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2025-10-11 22:08:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2025-10-11 21:52:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2025-10-11 21:52:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2025-10-11 21:52:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2025-10-11 22:09:01 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2025-10-11 22:08:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2025-10-11 21:52:43 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2025-10-11 21:52:43 +0100"
     },
     "done": true
   },

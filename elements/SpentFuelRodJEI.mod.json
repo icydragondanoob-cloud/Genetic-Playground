@@ -1,0 +1,21 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "uranium_fuel_rod_decay",
+    "result": {
+      "value": "CUSTOM:SpentFuelRod"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:UraniumFuelRod"
+      }
+    ],
+    "integers": [
+      1
+    ],
+    "strings": [],
+    "recipetype": "UraniumFuelRodDecay"
+  }
+}

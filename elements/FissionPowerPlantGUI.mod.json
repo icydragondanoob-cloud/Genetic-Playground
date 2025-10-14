@@ -3,63 +3,829 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 181,
-    "height": 195,
-    "inventoryOffsetX": 0,
-    "inventoryOffsetY": 16,
+    "width": 208,
+    "height": 202,
+    "inventoryOffsetX": 18,
+    "inventoryOffsetY": 20,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
         "type": "image",
         "data": {
-          "image": "fissionreactor4.png",
+          "image": "fissionreactorblockgui2.png",
           "use1Xscale": false,
-          "x": 123,
-          "y": 23,
+          "x": 110,
+          "y": 19,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 162,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 14,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 248,
+          "y": 118,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 183,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 248,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 227,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 6,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 183,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 7,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 8,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 227,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 9,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 248,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 5,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 162,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 10,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 162,
+          "y": 118,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 11,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 183,
+          "y": 118,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 12,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 118,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 13,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 227,
+          "y": 118,
           "locked": false
         }
       },
       {
         "type": "sprite",
         "data": {
-          "sprite": "spritesheet_12.png",
-          "spritesCount": 56,
+          "sprite": "spritesheet_12_1.png",
+          "spritesCount": 61,
           "spriteIndex": {
             "fixedValue": 0.0,
-            "name": "BatterySpritesheetProcedure"
+            "name": "OhUSpritesheetProcedure"
           },
-          "x": 244,
-          "y": 71,
+          "x": 283,
+          "y": 57,
           "locked": false
         }
       },
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_proc_battery_tooltip",
+          "name": "tooltip_proc_oh_u_tooltip",
           "text": {
             "fixedValue": "",
-            "name": "BatteryTooltip"
+            "name": "OhUTooltip"
           },
           "width": 16,
           "height": 64,
-          "x": 244,
-          "y": 71,
+          "x": 283,
+          "y": 57,
           "locked": false
         }
       },
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_radioactive",
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_1",
           "text": {
-            "fixedValue": "Radioactive"
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip"
           },
-          "width": 18,
-          "height": 17,
-          "x": 269,
-          "y": 115,
+          "width": 20,
+          "height": 20,
+          "x": 161,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_11",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip1"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 182,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_2",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip2"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 204,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_3",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip3"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 226,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_4",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip4"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 247,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_5",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip5"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 161,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_6",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip6"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 182,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_7",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip7"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 204,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_8",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip8"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 226,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_9",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip9"
+          },
+          "width": 19,
+          "height": 20,
+          "x": 247,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_10",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip10"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 161,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_111",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip11"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 182,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_12",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip12"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 204,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_13",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip13"
+          },
+          "width": 20,
+          "height": 20,
+          "x": 226,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_fuel_rod_slot_tooltip_14",
+          "text": {
+            "fixedValue": "",
+            "name": "FuelRodSlotTooltip14"
+          },
+          "width": 21,
+          "height": 20,
+          "x": 247,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_scrambutton",
+          "image": "scrambutton.png",
+          "hoveredImage": "scrambuttonselection.png",
+          "onClick": {
+            "name": "FissionPowerPlantOnSCRAMButton"
+          },
+          "x": 117,
+          "y": 154,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantnone.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantNone"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltip"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantNone"
+          },
+          "width": 44,
+          "height": 65,
+          "x": 115,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantwater.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantWater"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip_water",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltipWATER"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantWater"
+          },
+          "width": 42,
+          "height": 64,
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantsnow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantSnow"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip_snow",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltipSNOW"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantSnow"
+          },
+          "width": 42,
+          "height": 64,
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantice.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantIce"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip_ice",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltipICE"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantIce"
+          },
+          "width": 42,
+          "height": 64,
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantpackedice.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantPackedIce"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip_packedice",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltipPACKEDICE"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantPackedIce"
+          },
+          "width": 40,
+          "height": 63,
+          "x": 117,
+          "y": 55,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantblueice.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantBlueIce"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip_blueice",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltipBLUEICE"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantBlueIce"
+          },
+          "width": 42,
+          "height": 64,
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_will_instantly_shutdown_reactor",
+          "text": {
+            "fixedValue": "Will instantly shutdown reactor and renders all fuel rods as useless.",
+            "name": "SCRAMTooltip"
+          },
+          "width": 31,
+          "height": 13,
+          "x": 117,
+          "y": 154,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_fissionreactorconfig",
+          "image": "fissionreactorconfig.png",
+          "hoveredImage": "fissionreactorconfigselected.png",
+          "onClick": {
+            "name": "OpenFissionReactorConfig"
+          },
+          "x": 117,
+          "y": 168,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blocke.png",
+          "use1Xscale": false,
+          "x": 116,
+          "y": 117,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "coolantunkown.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FissionPowerCoolantUnkown"
+          },
+          "x": 116,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oc_u_tooltip_unkown",
+          "text": {
+            "fixedValue": "",
+            "name": "OcUTooltipUNKOWN"
+          },
+          "displayCondition": {
+            "name": "FissionPowerCoolantUnkown"
+          },
+          "width": 41,
+          "height": 64,
+          "x": 116,
+          "y": 54,
           "locked": false
         }
       }

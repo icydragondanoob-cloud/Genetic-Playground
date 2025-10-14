@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "genetic_playground:syringe"
+      "id": "genetic_playground:syringe_of_cow_blood"
     },
     "title": {
       "translate": "advancements.first_blood.title"
@@ -16,21 +16,8 @@
   },
   "criteria": {
     "first_blood_0": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "genetic_playground:syringe"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
+      "trigger": "minecraft:impossible"
     }
   },
-  "parent": "minecraft:adventure/adventuring_time"
+  "parent": "genetic_playground:first_syringe"
 }

@@ -7,7 +7,7 @@
     "textureLeft": "smooth_stone_texture_je2_be2-1.png_2",
     "textureFront": "smooth_stone_texture_je2_be2-1.png_2-1.png_1-1.png_2",
     "textureRight": "smooth_stone_texture_je2_be2-1.png_2",
-    "textureBack": "smooth_stone_texture_je2_be2-1.png_2",
+    "textureBack": "aluminiumelectricport",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,

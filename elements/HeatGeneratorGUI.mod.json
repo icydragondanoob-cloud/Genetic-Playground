@@ -1,0 +1,331 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_heat_generator",
+          "text": {
+            "fixedValue": "Heat Generator"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "spritesheet_12.png",
+          "spritesCount": 56,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "BatterySpritesheetProcedure"
+          },
+          "x": 276,
+          "y": 84,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_battery_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "BatteryTooltip"
+          },
+          "width": 20,
+          "height": 71,
+          "x": 274,
+          "y": 79,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_place_lava_around_heat_generator",
+          "text": {
+            "fixedValue": "Place lava around heat"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 146,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_generator_to_produce_fe",
+          "text": {
+            "fixedValue": "generator to produce FE."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 147,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "heatgenguipart.png",
+          "use1Xscale": false,
+          "x": 162,
+          "y": 88,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lavaheatgencoolio.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LavaXplusone"
+          },
+          "x": 231,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fet",
+          "text": {
+            "fixedValue": "FE/t:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 76,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lavaheatgencoolio.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LavaXminusone"
+          },
+          "x": 163,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lavaheatgencoolio.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LavaZplusone"
+          },
+          "x": 197,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lavaheatgencoolio.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LavaZminusone"
+          },
+          "x": 197,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lavaheatgencoolio.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LavaYplusone"
+          },
+          "x": 231,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lavaheatgencoolio.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "LavaYminusone"
+          },
+          "x": 163,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_heat_generator_lava_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "HeatGeneratorLavaTooltip"
+          },
+          "displayCondition": {
+            "name": "LavaZminusone"
+          },
+          "width": 34,
+          "height": 35,
+          "x": 195,
+          "y": 160,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_heat_generator_lava_tooltip1",
+          "text": {
+            "fixedValue": "",
+            "name": "HeatGeneratorLavaTooltip"
+          },
+          "displayCondition": {
+            "name": "LavaZplusone"
+          },
+          "width": 33,
+          "height": 35,
+          "x": 196,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_heat_generator_lava_tooltip2",
+          "text": {
+            "fixedValue": "",
+            "name": "HeatGeneratorLavaTooltip"
+          },
+          "displayCondition": {
+            "name": "LavaXminusone"
+          },
+          "width": 33,
+          "height": 34,
+          "x": 162,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_heat_generator_lava_tooltip3",
+          "text": {
+            "fixedValue": "",
+            "name": "HeatGeneratorLavaTooltip"
+          },
+          "displayCondition": {
+            "name": "LavaXplusone"
+          },
+          "width": 33,
+          "height": 35,
+          "x": 230,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_heat_generator_lava_tooltip4",
+          "text": {
+            "fixedValue": "",
+            "name": "HeatGeneratorLavaTooltip"
+          },
+          "displayCondition": {
+            "name": "LavaYminusone"
+          },
+          "width": 33,
+          "height": 35,
+          "x": 162,
+          "y": 160,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_heat_generator_lava_tooltip5",
+          "text": {
+            "fixedValue": "",
+            "name": "HeatGeneratorLavaTooltip"
+          },
+          "displayCondition": {
+            "name": "LavaYplusone"
+          },
+          "width": 33,
+          "height": 35,
+          "x": 230,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_f_eper_tick",
+          "text": {
+            "fixedValue": "",
+            "name": "FEperTick"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 76,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "BloodPurifierGUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

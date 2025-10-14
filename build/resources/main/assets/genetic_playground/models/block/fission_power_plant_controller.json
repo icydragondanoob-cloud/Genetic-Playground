@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "minecraft:block/beacon",
-    "particle": "minecraft:block/beacon"
+    "down": "genetic_playground:block/lead",
+    "up": "genetic_playground:block/nuclearpowerplanttop",
+    "north": "genetic_playground:block/nuclearpowerplant",
+    "east": "genetic_playground:block/lead",
+    "south": "genetic_playground:block/lead",
+    "west": "genetic_playground:block/lead",
+    "particle": "genetic_playground:block/lead"
   },
   "render_type": "solid"
 }

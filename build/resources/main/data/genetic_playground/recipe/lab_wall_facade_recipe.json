@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "genetic_playground:lab_walls"
+  },
+  "result": {
+    "id": "genetic_playground:lab_wall_facade",
+    "count": 16
+  }
+}

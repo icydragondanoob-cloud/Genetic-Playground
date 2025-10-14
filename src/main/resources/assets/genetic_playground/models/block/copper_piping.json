@@ -1,9 +1,0 @@
-{
-  "parent": "genetic_playground:custom/copperpipealone",
-  "textures": {
-    "all": "minecraft:block/copper_block",
-    "particle": "minecraft:block/copper_block",
-    "0": "genetic_playground:block/pipeplain"
-  },
-  "render_type": "solid"
-}

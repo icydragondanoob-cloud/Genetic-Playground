@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "nether_wastes",
+    "warped_forest",
+    "crimson_forest"
+  ],
+  "features": "genetic_playground:nether_uranium_ore",
+  "step": "underground_ores"
+}

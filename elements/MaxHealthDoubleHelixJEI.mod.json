@@ -1,0 +1,21 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "blood_extraction_jei",
+    "result": {
+      "value": "CUSTOM:DoubleHelixMaxHealth"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "TAG:geneticplayground:cells"
+      }
+    ],
+    "integers": [
+      1
+    ],
+    "strings": [],
+    "recipetype": "BloodExtractionJEI"
+  }
+}

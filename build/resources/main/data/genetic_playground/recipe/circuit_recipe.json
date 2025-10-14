@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:energy_battery"
+    },
+    "b": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "minecraft:lapis_block"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:circuit",
+    "count": 1
+  }
+}

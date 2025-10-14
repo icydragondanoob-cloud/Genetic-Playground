@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:SolarPanel"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:HeatTank"
+      },
+      {
+        "value": "CUSTOM:Circuit"
+      },
+      {
+        "value": "CUSTOM:EnergyBattery"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:AluminiumBlock"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HeatGenerator"
+    },
+    "name": "heat_gen_recipe",
+    "namespace": "mod"
+  }
+}

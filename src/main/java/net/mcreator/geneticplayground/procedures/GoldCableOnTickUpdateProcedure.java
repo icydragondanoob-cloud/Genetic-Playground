@@ -24,9 +24,18 @@ public class GoldCableOnTickUpdateProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("cableholdenergy", (getEnergyStored(world, BlockPos.containing(x, y, z), null)));
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("geneticplayground:femachines")))
 				&& !(world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("geneticplayground:fegenerator")))
-				&& getEnergyStored(world, BlockPos.containing(x + 1, y, z), null) != getMaxEnergyStored(world, BlockPos.containing(x + 1, y, z), null)) {
+				&& getEnergyStored(world, BlockPos.containing(x + 1, y, z), null) == getMaxEnergyStored(world, BlockPos.containing(x + 1, y, z), null)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -102,7 +111,7 @@ public class GoldCableOnTickUpdateProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
-		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "feblock") >= 1) {
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "feblock") > 0) {
 			if (world instanceof ILevelExtension _ext) {
 				IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x + 1, y, z), null);
 				if (_entityStorage != null)

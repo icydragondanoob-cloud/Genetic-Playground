@@ -25,7 +25,6 @@ import net.mcreator.geneticplayground.init.GeneticPlaygroundModMenus;
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModItems;
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModFluids;
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModFluidTypes;
-import net.mcreator.geneticplayground.init.GeneticPlaygroundModEntities;
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModBlocks;
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModBlockEntities;
 
@@ -50,7 +49,7 @@ public class GeneticPlaygroundMod {
 		GeneticPlaygroundModBlocks.REGISTRY.register(modEventBus);
 		GeneticPlaygroundModBlockEntities.REGISTRY.register(modEventBus);
 		GeneticPlaygroundModItems.REGISTRY.register(modEventBus);
-		GeneticPlaygroundModEntities.REGISTRY.register(modEventBus);
+
 		GeneticPlaygroundModTabs.REGISTRY.register(modEventBus);
 		GeneticPlaygroundModVariables.ATTACHMENT_TYPES.register(modEventBus);
 

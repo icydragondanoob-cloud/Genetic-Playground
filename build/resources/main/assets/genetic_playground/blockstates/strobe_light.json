@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "genetic_playground:block/strobe_light"
+    },
+    "blockstate=1": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_2"
+    },
+    "blockstate=4": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_3"
+    },
+    "blockstate=5": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_4"
+    },
+    "blockstate=6": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_5"
+    },
+    "blockstate=7": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_6"
+    },
+    "blockstate=8": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_7"
+    },
+    "blockstate=9": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_8"
+    },
+    "blockstate=10": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_9"
+    },
+    "blockstate=11": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_10"
+    },
+    "blockstate=12": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_11"
+    },
+    "blockstate=13": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_12"
+    },
+    "blockstate=14": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_13"
+    },
+    "blockstate=15": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_14"
+    },
+    "blockstate=16": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_15"
+    },
+    "blockstate=17": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_16"
+    },
+    "blockstate=18": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_17"
+    },
+    "blockstate=19": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_18"
+    },
+    "blockstate=20": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_19"
+    },
+    "blockstate=21": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_20"
+    },
+    "blockstate=22": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_21"
+    },
+    "blockstate=23": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_22"
+    },
+    "blockstate=24": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_23"
+    },
+    "blockstate=25": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_24"
+    },
+    "blockstate=26": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_25"
+    },
+    "blockstate=27": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_26"
+    },
+    "blockstate=28": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_27"
+    },
+    "blockstate=29": {
+      "model": "genetic_playground:block/strobe_light_blockstates_blockstate_28"
+    }
+  }
+}

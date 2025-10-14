@@ -8,8 +8,11 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.geneticplayground.client.gui.ThermalTurbineGUIScreen;
 import net.mcreator.geneticplayground.client.gui.PlasmidSynthesiserGUIScreen;
 import net.mcreator.geneticplayground.client.gui.PlasmidInjectionChamberGUIScreen;
+import net.mcreator.geneticplayground.client.gui.HeatGeneratorGUIScreen;
+import net.mcreator.geneticplayground.client.gui.FissionReactorConfigGUIScreen;
 import net.mcreator.geneticplayground.client.gui.FissionPowerPlantGUIScreen;
 import net.mcreator.geneticplayground.client.gui.DNAExtractorGUIScreen;
 import net.mcreator.geneticplayground.client.gui.CellAnalyzerGUIScreen;
@@ -27,6 +30,9 @@ public class GeneticPlaygroundModScreens {
 		event.register(GeneticPlaygroundModMenus.PLASMID_SYNTHESISER_GUI.get(), PlasmidSynthesiserGUIScreen::new);
 		event.register(GeneticPlaygroundModMenus.PLASMID_INJECTION_CHAMBER_GUI.get(), PlasmidInjectionChamberGUIScreen::new);
 		event.register(GeneticPlaygroundModMenus.FISSION_POWER_PLANT_GUI.get(), FissionPowerPlantGUIScreen::new);
+		event.register(GeneticPlaygroundModMenus.THERMAL_TURBINE_GUI.get(), ThermalTurbineGUIScreen::new);
+		event.register(GeneticPlaygroundModMenus.FISSION_REACTOR_CONFIG_GUI.get(), FissionReactorConfigGUIScreen::new);
+		event.register(GeneticPlaygroundModMenus.HEAT_GENERATOR_GUI.get(), HeatGeneratorGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

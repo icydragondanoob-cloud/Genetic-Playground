@@ -16,15 +16,18 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.geneticplayground.block.entity.UnknownBlockBlockEntity;
+import net.mcreator.geneticplayground.block.entity.ThermalTurbineBlockEntity;
+import net.mcreator.geneticplayground.block.entity.SuperFrozenIceBlockEntity;
+import net.mcreator.geneticplayground.block.entity.SolarPanelBlockEntity;
 import net.mcreator.geneticplayground.block.entity.PlasmidSynthesiserBlockEntity;
 import net.mcreator.geneticplayground.block.entity.PlasmidInjectionChamberBlockEntity;
 import net.mcreator.geneticplayground.block.entity.NetheriteCableBlockEntity;
+import net.mcreator.geneticplayground.block.entity.HeatGeneratorBlockEntity;
 import net.mcreator.geneticplayground.block.entity.GoldCableBlockEntity;
 import net.mcreator.geneticplayground.block.entity.FissionPowerPlantControllerBlockEntity;
-import net.mcreator.geneticplayground.block.entity.ElectricPumpBlockEntity;
 import net.mcreator.geneticplayground.block.entity.DNAExtractorBlockEntity;
 import net.mcreator.geneticplayground.block.entity.CreativeEnergyBlockBlockEntity;
-import net.mcreator.geneticplayground.block.entity.CopperPipingBlockEntity;
 import net.mcreator.geneticplayground.block.entity.CellAnalyzerBlockEntity;
 import net.mcreator.geneticplayground.block.entity.BloodPurifierBlockEntity;
 import net.mcreator.geneticplayground.block.entity.BloodCentrifugeBlockEntity;
@@ -45,11 +48,14 @@ public class GeneticPlaygroundModBlockEntities {
 			PlasmidInjectionChamberBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FissionPowerPlantControllerBlockEntity>> FISSION_POWER_PLANT_CONTROLLER = register("fission_power_plant_controller", GeneticPlaygroundModBlocks.FISSION_POWER_PLANT_CONTROLLER,
 			FissionPowerPlantControllerBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperPipingBlockEntity>> COPPER_PIPING = register("copper_piping", GeneticPlaygroundModBlocks.COPPER_PIPING, CopperPipingBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GoldCableBlockEntity>> GOLD_CABLE = register("gold_cable", GeneticPlaygroundModBlocks.GOLD_CABLE, GoldCableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AluminiumCableBlockEntity>> ALUMINIUM_CABLE = register("aluminium_cable", GeneticPlaygroundModBlocks.ALUMINIUM_CABLE, AluminiumCableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NetheriteCableBlockEntity>> NETHERITE_CABLE = register("netherite_cable", GeneticPlaygroundModBlocks.NETHERITE_CABLE, NetheriteCableBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ElectricPumpBlockEntity>> ELECTRIC_PUMP = register("electric_pump", GeneticPlaygroundModBlocks.ELECTRIC_PUMP, ElectricPumpBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ThermalTurbineBlockEntity>> THERMAL_TURBINE = register("thermal_turbine", GeneticPlaygroundModBlocks.THERMAL_TURBINE, ThermalTurbineBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<UnknownBlockBlockEntity>> UNKNOWN_BLOCK = register("unknown_block", GeneticPlaygroundModBlocks.UNKNOWN_BLOCK, UnknownBlockBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SuperFrozenIceBlockEntity>> SUPER_FROZEN_ICE = register("super_frozen_ice", GeneticPlaygroundModBlocks.SUPER_FROZEN_ICE, SuperFrozenIceBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SolarPanelBlockEntity>> SOLAR_PANEL = register("solar_panel", GeneticPlaygroundModBlocks.SOLAR_PANEL, SolarPanelBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<HeatGeneratorBlockEntity>> HEAT_GENERATOR = register("heat_generator", GeneticPlaygroundModBlocks.HEAT_GENERATOR, HeatGeneratorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -76,18 +82,19 @@ public class GeneticPlaygroundModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PLASMID_INJECTION_CHAMBER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, PLASMID_INJECTION_CHAMBER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, FISSION_POWER_PLANT_CONTROLLER.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, FISSION_POWER_PLANT_CONTROLLER.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, FISSION_POWER_PLANT_CONTROLLER.get(), (blockEntity, side) -> blockEntity.getFluidTank());
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COPPER_PIPING.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, COPPER_PIPING.get(), (blockEntity, side) -> blockEntity.getFluidTank());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GOLD_CABLE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, GOLD_CABLE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ALUMINIUM_CABLE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, ALUMINIUM_CABLE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NETHERITE_CABLE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, NETHERITE_CABLE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ELECTRIC_PUMP.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, ELECTRIC_PUMP.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
-		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, ELECTRIC_PUMP.get(), (blockEntity, side) -> blockEntity.getFluidTank());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, THERMAL_TURBINE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, THERMAL_TURBINE.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, UNKNOWN_BLOCK.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUPER_FROZEN_ICE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SOLAR_PANEL.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, SOLAR_PANEL.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, HEAT_GENERATOR.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, HEAT_GENERATOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 	}
 }

@@ -16,4 +16,9 @@ public class GeneticPlaygroundModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(Registries.SOUND_EVENT, GeneticPlaygroundMod.MODID);
 	public static final DeferredHolder<SoundEvent, SoundEvent> SYRINGE_STAB = REGISTRY.register("syringe.stab", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("genetic_playground", "syringe.stab")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> CENTRIFUGE_SPIN = REGISTRY.register("centrifuge.spin", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("genetic_playground", "centrifuge.spin")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> NUCLEARPOWERPLANT_SCRAM = REGISTRY.register("nuclearpowerplant.scram",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("genetic_playground", "nuclearpowerplant.scram")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SIREN_ALARM = REGISTRY.register("siren.alarm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("genetic_playground", "siren.alarm")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SIREN_ALARM3 = REGISTRY.register("siren.alarm3", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("genetic_playground", "siren.alarm3")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SIREN_ALARM2 = REGISTRY.register("siren.alarm2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("genetic_playground", "siren.alarm2")));
 }

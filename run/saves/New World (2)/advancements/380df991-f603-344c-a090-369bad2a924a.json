@@ -1,62 +1,356 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-09-22 21:41:51 +0100"
+      "unlock_right_away": "2025-10-12 13:55:44 +0100"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:savanna_plateau": "2025-09-23 20:20:33 +0100",
-      "minecraft:savanna": "2025-09-22 21:42:21 +0100"
+      "minecraft:cold_ocean": "2025-10-12 16:52:07 +0100",
+      "minecraft:beach": "2025-10-12 16:57:21 +0100",
+      "minecraft:dark_forest": "2025-10-12 17:13:44 +0100",
+      "minecraft:taiga": "2025-10-12 16:57:17 +0100",
+      "minecraft:birch_forest": "2025-10-12 17:14:48 +0100",
+      "minecraft:stony_shore": "2025-10-12 16:52:02 +0100",
+      "minecraft:lush_caves": "2025-10-12 16:58:48 +0100",
+      "minecraft:plains": "2025-10-12 13:55:44 +0100"
     },
     "done": false
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_chestplate": "2025-10-12 14:27:24 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_chestplate": "2025-10-12 14:27:24 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_chestplate": "2025-10-12 14:27:24 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2025-10-12 14:27:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-10-12 14:27:49 +0100"
+    },
+    "done": true
   },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "has_lots_of_items": "2025-09-23 19:49:49 +0100"
+      "has_lots_of_items": "2025-10-12 15:05:00 +0100"
     },
     "done": true
   },
-  "minecraft:adventure/root": {
+  "minecraft:story/lava_bucket": {
     "criteria": {
-      "killed_something": "2025-09-23 20:02:02 +0100"
+      "lava_bucket": "2025-10-12 15:06:04 +0100"
     },
     "done": true
   },
-  "minecraft:adventure/kill_all_mobs": {
+  "minecraft:recipes/misc/coal": {
     "criteria": {
-      "minecraft:skeleton": "2025-09-23 20:02:22 +0100"
-    },
-    "done": false
-  },
-  "minecraft:adventure/kill_a_mob": {
-    "criteria": {
-      "minecraft:skeleton": "2025-09-23 20:02:22 +0100"
+      "has_coal_block": "2025-10-12 15:11:14 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/bone_meal": {
+  "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
-      "has_bone": "2025-09-23 20:02:23 +0100"
+      "in_water": "2025-10-12 16:52:31 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_porkchop": {
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
-      "has_porkchop": "2025-09-23 20:02:25 +0100"
+      "in_water": "2025-10-12 16:52:31 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+  "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
-      "has_porkchop": "2025-09-23 20:02:25 +0100"
+      "in_water": "2025-10-12 16:52:31 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+  "minecraft:recipes/transportation/bamboo_raft": {
     "criteria": {
-      "has_porkchop": "2025-09-23 20:02:25 +0100"
+      "in_water": "2025-10-12 16:52:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2025-10-12 16:52:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2025-10-12 16:52:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2025-10-12 16:52:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2025-10-12 16:52:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2025-10-12 16:52:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2025-10-12 17:14:58 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2025-10-12 17:15:11 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/aluminium_smelting_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/dna_extractor_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/uranium_fuel_rod_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/uranium_smelting_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/plasmid_synthesiser_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/cell_analyzer_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/gold_cable_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/aluminium_block_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/netherite_cable_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/unknown_block_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/aluminium_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/plasmid_injection_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/blood_purifier_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/aluminium_cable_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/blood_centrifuge_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 18:42:09 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/empty_syringe_recipe": {
+    "criteria": {
+      "has_ingredient_1": "2025-10-12 18:45:29 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/thermal_turbine_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/fission_reactor_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/fusion_thing_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/lead_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/mr_fusion_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/lead_block_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
+    },
+    "done": true
+  },
+  "genetic_playground:recipes/lead_smelting_recipe": {
+    "criteria": {
+      "has_ingredient_0": "2025-10-12 20:47:21 +0100"
     },
     "done": true
   },

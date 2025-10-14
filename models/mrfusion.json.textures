@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "mrfusionbottom",
+        "1": "mrfusionbottomplusone",
+        "2": "mrfusiongreyaccents",
+        "3": "mrfusiontop",
+        "4": "mrfusionmiddle",
+        "5": ""
+      },
+      "name": "default"
+    }
+  }
+}

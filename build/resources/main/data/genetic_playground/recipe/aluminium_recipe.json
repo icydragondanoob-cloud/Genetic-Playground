@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "genetic_playground:aluminium_block"
+    }
+  ],
+  "result": {
+    "id": "genetic_playground:aluminium_ingot",
+    "count": 9
+  }
+}

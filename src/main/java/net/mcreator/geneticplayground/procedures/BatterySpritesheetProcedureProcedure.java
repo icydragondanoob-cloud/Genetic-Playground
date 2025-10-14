@@ -11,7 +11,9 @@ import net.minecraft.core.BlockPos;
 public class BatterySpritesheetProcedureProcedure {
 	public static double execute(LevelAccessor world, double x, double y, double z) {
 		double ProgressLevel = 0;
-		ProgressLevel = Math.round((getEnergyStored(world, BlockPos.containing(x, y, z), null) * 56) / getMaxEnergyStored(world, BlockPos.containing(x, y, z), null));
+		if (getEnergyStored(world, BlockPos.containing(x, y, z), null) != 0) {
+			ProgressLevel = Math.round((getEnergyStored(world, BlockPos.containing(x, y, z), null) * 56) / getMaxEnergyStored(world, BlockPos.containing(x, y, z), null));
+		}
 		return ProgressLevel;
 	}
 

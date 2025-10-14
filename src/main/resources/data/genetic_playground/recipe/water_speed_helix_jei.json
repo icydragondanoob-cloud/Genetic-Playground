@@ -1,0 +1,12 @@
+{
+  "type": "genetic_playground:blood_extraction_jei",
+  "ingredients": [
+    {
+      "tag": "geneticplayground:fish"
+    }
+  ],
+  "output": {
+    "id": "genetic_playground:double_helix_water_speed",
+    "count": 1
+  }
+}

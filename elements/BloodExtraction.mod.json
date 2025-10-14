@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SyringeOfPigBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfCowBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfSheepBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfEndermanEnderfluid"
+      },
+      {
+        "value": "CUSTOM:SyringeOfChickenBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfRabbitBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfHorseBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfDonkeyBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfMuleBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfCodBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfSalmonBlood"
+      },
+      {
+        "value": "CUSTOM:SyringeOfCreeperBlood"
+      }
+    ],
+    "information": [
+      "Extract blood by right clicking supported entities.",
+      " ",
+      "Can also be purified in a Blood Purification Chamber."
+    ]
+  }
+}

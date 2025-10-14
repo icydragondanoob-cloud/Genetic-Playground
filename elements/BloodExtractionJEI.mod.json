@@ -1,0 +1,35 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "bloodextractionjei1.png",
+    "width": 95,
+    "height": 56,
+    "icon": {
+      "value": "CUSTOM:DNAExtractor"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:DNAExtractor"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "title": "Blood Extraction JEI",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 14,
+        "y": 17,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 65,
+        "y": 17,
+        "slotid": 0
+      }
+    ]
+  }
+}

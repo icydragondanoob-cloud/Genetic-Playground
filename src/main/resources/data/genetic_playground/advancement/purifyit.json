@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "genetic_playground:energy_battery"
+    },
+    "title": {
+      "translate": "advancements.purifyit.title"
+    },
+    "description": {
+      "translate": "advancements.purifyit.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "purifyit_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "genetic_playground:energy_battery"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "genetic_playground:smelt_it"
+}

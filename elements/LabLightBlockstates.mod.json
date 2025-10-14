@@ -1,0 +1,22 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LabLight",
+    "blockstateList": [
+      {
+        "texture": "lablight-1.png",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 14,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

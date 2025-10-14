@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bc ",
+    "db "
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:needle"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "genetic_playground:fluid_tank"
+    },
+    "d": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:syringe",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "abb",
+    "bb "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "genetic_playground:uranium_ingot"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:unknown_ingot",
+    "count": 1
+  }
+}

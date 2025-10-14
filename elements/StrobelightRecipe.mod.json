@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.QUARTZ"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StrobeLight"
+    },
+    "name": "strobelight_recipe",
+    "namespace": "mod"
+  }
+}

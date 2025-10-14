@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aab",
+    "cdb",
+    "eeb"
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:double_helix_failed"
+    },
+    "b": {
+      "item": "genetic_playground:energy_battery"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "genetic_playground:circuit"
+    },
+    "e": {
+      "item": "genetic_playground:aluminium_block"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:plasmid_synthesiser",
+    "count": 1
+  }
+}

@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft:block/composter_bottom",
-    "particle": "minecraft:block/composter_bottom"
+    "all": "genetic_playground:block/creativeenergy",
+    "particle": "genetic_playground:block/creativeenergy"
   },
   "render_type": "solid"
 }

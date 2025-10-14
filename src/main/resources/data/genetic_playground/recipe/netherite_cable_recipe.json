@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:gold_cable"
+    },
+    "b": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:netherite_cable",
+    "count": 4
+  }
+}

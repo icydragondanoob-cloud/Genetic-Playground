@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "minecraft:block/jigsaw_side",
-    "particle": "minecraft:block/jigsaw_side"
-  },
-  "render_type": "solid"
-}

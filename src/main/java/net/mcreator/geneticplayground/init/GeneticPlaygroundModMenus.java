@@ -15,8 +15,11 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.geneticplayground.world.inventory.ThermalTurbineGUIMenu;
 import net.mcreator.geneticplayground.world.inventory.PlasmidSynthesiserGUIMenu;
 import net.mcreator.geneticplayground.world.inventory.PlasmidInjectionChamberGUIMenu;
+import net.mcreator.geneticplayground.world.inventory.HeatGeneratorGUIMenu;
+import net.mcreator.geneticplayground.world.inventory.FissionReactorConfigGUIMenu;
 import net.mcreator.geneticplayground.world.inventory.FissionPowerPlantGUIMenu;
 import net.mcreator.geneticplayground.world.inventory.DNAExtractorGUIMenu;
 import net.mcreator.geneticplayground.world.inventory.CellAnalyzerGUIMenu;
@@ -36,6 +39,9 @@ public class GeneticPlaygroundModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<PlasmidSynthesiserGUIMenu>> PLASMID_SYNTHESISER_GUI = REGISTRY.register("plasmid_synthesiser_gui", () -> IMenuTypeExtension.create(PlasmidSynthesiserGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<PlasmidInjectionChamberGUIMenu>> PLASMID_INJECTION_CHAMBER_GUI = REGISTRY.register("plasmid_injection_chamber_gui", () -> IMenuTypeExtension.create(PlasmidInjectionChamberGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<FissionPowerPlantGUIMenu>> FISSION_POWER_PLANT_GUI = REGISTRY.register("fission_power_plant_gui", () -> IMenuTypeExtension.create(FissionPowerPlantGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ThermalTurbineGUIMenu>> THERMAL_TURBINE_GUI = REGISTRY.register("thermal_turbine_gui", () -> IMenuTypeExtension.create(ThermalTurbineGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<FissionReactorConfigGUIMenu>> FISSION_REACTOR_CONFIG_GUI = REGISTRY.register("fission_reactor_config_gui", () -> IMenuTypeExtension.create(FissionReactorConfigGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HeatGeneratorGUIMenu>> HEAT_GENERATOR_GUI = REGISTRY.register("heat_generator_gui", () -> IMenuTypeExtension.create(HeatGeneratorGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

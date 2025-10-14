@@ -1,0 +1,35 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "bloodcentrifugejei2.png",
+    "width": 175,
+    "height": 89,
+    "icon": {
+      "value": "CUSTOM:BloodCentrifuge"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:BloodCentrifuge"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "title": "Blood Centrifuge",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 53,
+        "y": 41,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 100,
+        "y": 50,
+        "slotid": 0
+      }
+    ]
+  }
+}

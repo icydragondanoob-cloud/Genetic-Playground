@@ -35,7 +35,7 @@ public class PlasmidSynthesiserJEITypeRecipeCategory implements IRecipeCategory<
 
 	@Override
 	public Component getTitle() {
-		return Component.literal("Plasmid Synthesiser JEI Type");
+		return Component.literal("Plasmid Synthesiser");
 	}
 
 	@Override

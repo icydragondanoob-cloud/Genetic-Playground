@@ -1,0 +1,21 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "blood_extraction_jei",
+    "result": {
+      "value": "CUSTOM:DoubleHelixExplosive"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CreeperCell"
+      }
+    ],
+    "integers": [
+      1
+    ],
+    "strings": [],
+    "recipetype": "BloodExtractionJEI"
+  }
+}

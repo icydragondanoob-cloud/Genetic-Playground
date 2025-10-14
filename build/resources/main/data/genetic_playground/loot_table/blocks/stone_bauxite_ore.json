@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "genetic_playground:blocks/stone_bauxite_ore",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "genetic_playground:bauxite",
+          "functions": [
+            {
+              "count": 2,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

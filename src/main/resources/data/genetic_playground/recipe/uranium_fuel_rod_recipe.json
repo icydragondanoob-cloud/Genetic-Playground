@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "abc",
+    "bc "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "genetic_playground:uranium_ingot"
+    },
+    "c": {
+      "item": "genetic_playground:lead_ingot"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:uranium_fuel_rod",
+    "count": 1
+  }
+}

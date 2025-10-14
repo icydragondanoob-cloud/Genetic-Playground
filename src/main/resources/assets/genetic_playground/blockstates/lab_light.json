@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "genetic_playground:block/lab_light"
+    },
+    "blockstate=1": {
+      "model": "genetic_playground:block/lab_light_blockstates_blockstate_0"
+    }
+  }
+}

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "genetic_playground:rabbit_cell",
+    "genetic_playground:creeper_cell",
     "genetic_playground:cod_cell",
     "genetic_playground:mule_cell",
     "genetic_playground:sheep_cell",

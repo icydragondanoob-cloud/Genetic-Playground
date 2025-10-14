@@ -1,0 +1,102 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_energy_of_block",
+          "text": {
+            "fixedValue": "",
+            "name": "BatteryTooltip"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1_ophu_100_fe",
+          "text": {
+            "fixedValue": "1 ΩpHU = 5 FE"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_o_oh_u_of_block",
+          "text": {
+            "fixedValue": "",
+            "name": "GetOOhUOfBlock"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_o_oh_uper_tick_of_block",
+          "text": {
+            "fixedValue": "",
+            "name": "GetOOhUperTickOfBlock"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ih.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 37,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "HeatTurbineGUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -5,7 +5,7 @@
     "up": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2",
     "north": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2-1.png_1-1.png_2",
     "east": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2",
-    "south": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2",
+    "south": "genetic_playground:block/aluminiumelectricport",
     "west": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2",
     "particle": "genetic_playground:block/smooth_stone_texture_je2_be2-1.png_2"
   },

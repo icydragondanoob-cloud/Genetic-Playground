@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "genetic_playground:block/strobelightpink",
+    "up": "genetic_playground:block/strobelightpink",
+    "north": "genetic_playground:block/strobelightpink",
+    "east": "genetic_playground:block/strobelightpink",
+    "south": "genetic_playground:block/strobelightpink",
+    "west": "genetic_playground:block/strobelightpink",
+    "particle": "genetic_playground:block/off_redstone_lamp_texture_je3_be2-1.png"
+  },
+  "render_type": "solid"
+}

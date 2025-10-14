@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SolarPanel"
+    },
+    "name": "solar_panel_recipe",
+    "namespace": "mod"
+  }
+}

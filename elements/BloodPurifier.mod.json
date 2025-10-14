@@ -7,7 +7,7 @@
     "textureLeft": "smooth_stone_texture_je2_be2-1.png",
     "textureFront": "smooth_stone_texture_je2_be2-1.png_1-1.png",
     "textureRight": "smooth_stone_texture_je2_be2-1.png",
-    "textureBack": "smooth_stone_texture_je2_be2-1.png",
+    "textureBack": "bloodpurifierback",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 1,

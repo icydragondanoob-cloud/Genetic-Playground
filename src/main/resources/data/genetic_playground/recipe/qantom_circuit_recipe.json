@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "fgf"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ender_pearl"
+    },
+    "b": {
+      "item": "genetic_playground:fluid_tank"
+    },
+    "c": {
+      "item": "genetic_playground:energy_battery"
+    },
+    "d": {
+      "item": "genetic_playground:circuit"
+    },
+    "e": {
+      "item": "genetic_playground:heat_tank"
+    },
+    "f": {
+      "item": "genetic_playground:unknown_ingot"
+    },
+    "g": {
+      "item": "genetic_playground:uranium_fuel_rod"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:quantum_circuit",
+    "count": 1
+  }
+}

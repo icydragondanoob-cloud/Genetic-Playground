@@ -16,7 +16,7 @@
     "enableCraftingtable": true,
     "enableIntList": false,
     "enableStringList": false,
-    "title": "Plasmid Synthesiser JEI Type",
+    "title": "Plasmid Synthesiser",
     "slotList": [
       {
         "type": "INPUT",

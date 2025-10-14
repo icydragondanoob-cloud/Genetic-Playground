@@ -10,6 +10,7 @@
     "genetic_playground:water_speed_plasmid",
     "genetic_playground:movement_speed_plasmid",
     "genetic_playground:grazing_plasmid",
+    "genetic_playground:explosive_plasmid",
     "genetic_playground:wooly_plasmid",
     "genetic_playground:water_breathing_plasmid",
     "genetic_playground:max_health_plasmid",

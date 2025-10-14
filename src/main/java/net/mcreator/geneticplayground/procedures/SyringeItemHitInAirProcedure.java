@@ -1,10 +1,6 @@
 package net.mcreator.geneticplayground.procedures;
 
-import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -30,22 +26,8 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.geneticplayground.network.GeneticPlaygroundModVariables;
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModItems;
 
-import javax.annotation.Nullable;
-
-@EventBusSubscriber
 public class SyringeItemHitInAirProcedure {
-	@SubscribeEvent
-	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
-			return;
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
-	}
-
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
-	}
-
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get()
@@ -314,6 +296,29 @@ public class SyringeItemHitInAirProcedure {
 			if (entity instanceof LivingEntity _livingEntity120 && _livingEntity120.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED))
 				_livingEntity120.getAttribute(NeoForgeMod.SWIM_SPEED)
 						.setBaseValue(((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("WaterSpeed")));
+			if (entity instanceof LivingEntity _entity) {
+				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
+				_setstack.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				if (_entity instanceof Player _player)
+					_player.getInventory().setChanged();
+			}
+		}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get()
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableExplosive") == true) {
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 1);
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			{
+				GeneticPlaygroundModVariables.PlayerVariables _vars = entity.getData(GeneticPlaygroundModVariables.PLAYER_VARIABLES);
+				_vars.Explosive = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("explosive");
+				_vars.syncPlayerVariables(entity);
+			}
 			if (entity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);

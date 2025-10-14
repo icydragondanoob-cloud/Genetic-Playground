@@ -1,0 +1,14 @@
+{
+  "_fv": 79,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SyringeOfSterileBlood"
+      }
+    ],
+    "information": [
+      "To obtain Sterile Blood get 1000mb of Sterile Blood into a syringe from a Blood Centrifuge."
+    ]
+  }
+}

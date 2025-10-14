@@ -2,23 +2,10 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 4,
+  "projectBrowserSplitPos": 0,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Genetic Playground]",
-      "[, Genetic Playground, Source (Gradle)]",
-      "[, Genetic Playground, Source (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net]",
-      "[, Genetic Playground, Source (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net\\mcreator]",
-      "[, Genetic Playground, Source (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net\\mcreator, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net\\mcreator\\geneticplayground]",
-      "[, Genetic Playground, Source (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net\\mcreator, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net\\mcreator\\geneticplayground, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\java\\net\\mcreator\\geneticplayground\\item]",
-      "[, Genetic Playground, Resources (Gradle)]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets\\genetic_playground]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets\\genetic_playground, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets\\genetic_playground\\models]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets\\genetic_playground, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets\\genetic_playground\\models, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\assets\\genetic_playground\\models\\item]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\data]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\data, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\data\\genetic_playground]",
-      "[, Genetic Playground, Resources (Gradle), C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\data, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\data\\genetic_playground, C:\\Users\\icydr\\Downloads\\geneticplayground - Copy\\src\\main\\resources\\data\\genetic_playground\\recipe]"
+      "[, Genetic Playground]"
     ]
   }
 }

@@ -1950,6 +1950,155 @@ public class PlasmidSynthesizerOnTickUpdateProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
+		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()) {
+			if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 350000 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 5).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 6).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 7).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 8).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 9).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 10).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 11).copy()).getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 12).copy()).getItem() == GeneticPlaygroundModItems.EMPTY_PLASMID.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 12).getCount() < 2) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("maxTimer", 400);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "timer") > 400) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("timer", 0);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					plasmid = new ItemStack(GeneticPlaygroundModItems.EXPLOSIVE_PLASMID.get()).copy();
+					slot1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).copy();
+					{
+						final String _tagName = "explosive";
+						final boolean _tagValue = (slot1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("explosive"));
+						CustomData.update(DataComponents.CUSTOM_DATA, plasmid, tag -> tag.putBoolean(_tagName, _tagValue));
+					}
+					if (world instanceof ILevelExtension _ext) {
+						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
+						if (_entityStorage != null)
+							_entityStorage.extractEnergy(350000, false);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 2;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 3;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 4;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 5;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 6;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 7;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 8;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 9;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 10;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 11;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 12;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = plasmid.copy();
+						_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 13).getCount() + 1);
+						_itemHandlerModifiable.setStackInSlot(13, _setstack);
+					}
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("timer", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "timer") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			} else {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("timer", 0);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		}
 	}
 

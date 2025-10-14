@@ -5,19 +5,14 @@ package net.mcreator.geneticplayground.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.geneticplayground.GeneticPlaygroundMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class GeneticPlaygroundModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GeneticPlaygroundMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> GENETIC_PLAYGROUND = REGISTRY.register("genetic_playground",
@@ -26,23 +21,58 @@ public class GeneticPlaygroundModTabs {
 				tabData.accept(GeneticPlaygroundModBlocks.BLOOD_CENTRIFUGE.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.CELL_ANALYZER.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.DNA_EXTRACTOR.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.PLASMID_INJECTION_CHAMBER.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.PLASMID_SYNTHESISER.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.PLASMID_INJECTION_CHAMBER.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.ALUMINIUM_BLOCK.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.LAB_FAN.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.STROBE_LIGHT.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.LAB_LIGHT.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.SIREN.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.CREATIVE_ENERGY_BLOCK.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.UNKNOWN_BLOCK.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.FISSION_POWER_PLANT_CONTROLLER.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.THERMAL_TURBINE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.LEAD_BLOCK.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.SOLAR_PANEL.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.HEAT_GENERATOR.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.LAB_BRICK_WALLS.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.LAB_WALLS.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.BORDERLESS_LAB_WALLS.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.LAB_TILES.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.CRACKED_LAB_WALL.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.CREATIVE_ENERGY_BLOCK.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.NETHER_URANIUM_ORE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.STONE_BAUXITE_ORE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.DEEPSLATE_BAUXITE_ORE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.STONE_LEAD_ORE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.DEEPSLATE_LEAD_ORE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.ALUMINIUM_CABLE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.GOLD_CABLE.get().asItem());
+				tabData.accept(GeneticPlaygroundModBlocks.NETHERITE_CABLE.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.LAB_BRICK_FACADE.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.LAB_WALL_FACADE.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.WARNING_SIGN.get().asItem());
 				tabData.accept(GeneticPlaygroundModBlocks.BIOHAZARD_SIGN.get().asItem());
 				tabData.accept(GeneticPlaygroundModItems.PLASMA_RESIDUE_BUCKET.get());
 				tabData.accept(GeneticPlaygroundModItems.STERILE_BLOOD_BUCKET.get());
+				tabData.accept(GeneticPlaygroundModItems.URANIUM_FUEL_ROD.get());
+				tabData.accept(GeneticPlaygroundModItems.SPENT_FUEL_ROD.get());
+				tabData.accept(GeneticPlaygroundModItems.DISCARDED_FUEL_ROD.get());
+				tabData.accept(GeneticPlaygroundModItems.BAUXITE.get());
+				tabData.accept(GeneticPlaygroundModItems.URANIUM.get());
+				tabData.accept(GeneticPlaygroundModItems.RAW_LEAD.get());
+				tabData.accept(GeneticPlaygroundModItems.ALUMINIUM_INGOT.get());
+				tabData.accept(GeneticPlaygroundModItems.URANIUM_INGOT.get());
+				tabData.accept(GeneticPlaygroundModItems.UNKNOWN_INGOT.get());
+				tabData.accept(GeneticPlaygroundModItems.LEAD_INGOT.get());
 				tabData.accept(GeneticPlaygroundModItems.MACHINE_SPEED_UPGRADE.get());
+				tabData.accept(GeneticPlaygroundModItems.FLUID_TANK.get());
+				tabData.accept(GeneticPlaygroundModItems.ENERGY_BATTERY.get());
+				tabData.accept(GeneticPlaygroundModItems.HEAT_TANK.get());
+				tabData.accept(GeneticPlaygroundModItems.NEEDLE.get());
+				tabData.accept(GeneticPlaygroundModItems.COPPER_WIRE.get());
+				tabData.accept(GeneticPlaygroundModItems.MONITOR.get());
+				tabData.accept(GeneticPlaygroundModItems.CIRCUIT.get());
+				tabData.accept(GeneticPlaygroundModItems.QUANTUM_CIRCUIT.get());
 				tabData.accept(GeneticPlaygroundModItems.SYRINGE.get());
 				tabData.accept(GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get());
 				tabData.accept(GeneticPlaygroundModItems.SYRINGE_OF_PIG_BLOOD.get());
@@ -56,6 +86,7 @@ public class GeneticPlaygroundModTabs {
 				tabData.accept(GeneticPlaygroundModItems.SYRINGE_OF_MULE_BLOOD.get());
 				tabData.accept(GeneticPlaygroundModItems.SYRINGE_OF_COD_BLOOD.get());
 				tabData.accept(GeneticPlaygroundModItems.SYRINGE_OF_SALMON_BLOOD.get());
+				tabData.accept(GeneticPlaygroundModItems.SYRINGE_OF_CREEPER_BLOOD.get());
 				tabData.accept(GeneticPlaygroundModItems.PIG_CELL.get());
 				tabData.accept(GeneticPlaygroundModItems.COW_CELL.get());
 				tabData.accept(GeneticPlaygroundModItems.SHEEP_CELL.get());
@@ -67,6 +98,7 @@ public class GeneticPlaygroundModTabs {
 				tabData.accept(GeneticPlaygroundModItems.MULE_CELL.get());
 				tabData.accept(GeneticPlaygroundModItems.COD_CELL.get());
 				tabData.accept(GeneticPlaygroundModItems.SALMON_CELL.get());
+				tabData.accept(GeneticPlaygroundModItems.CREEPER_CELL.get());
 				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_FAILED.get());
 				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_MOVEMENT_SPEED.get());
 				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_MAX_HEALTH.get());
@@ -80,6 +112,7 @@ public class GeneticPlaygroundModTabs {
 				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_HIGHER_JUMP.get());
 				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_WATER_BREATHING.get());
 				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_WATER_SPEED.get());
+				tabData.accept(GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get());
 				tabData.accept(GeneticPlaygroundModItems.EMPTY_PLASMID.get());
 				tabData.accept(GeneticPlaygroundModItems.MOVEMENT_SPEED_PLASMID.get());
 				tabData.accept(GeneticPlaygroundModItems.MILKABLE_PLASMID.get());
@@ -93,18 +126,6 @@ public class GeneticPlaygroundModTabs {
 				tabData.accept(GeneticPlaygroundModItems.HIGHER_JUMP_PLASMID.get());
 				tabData.accept(GeneticPlaygroundModItems.WATER_SPEED_PLASMID.get());
 				tabData.accept(GeneticPlaygroundModItems.WATER_BREATHING_PLASMID.get());
-				tabData.accept(GeneticPlaygroundModBlocks.FISSION_POWER_PLANT_CONTROLLER.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.COPPER_PIPING.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.GOLD_CABLE.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.ALUMINIUM_CABLE.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.NETHERITE_CABLE.get().asItem());
-				tabData.accept(GeneticPlaygroundModBlocks.ELECTRIC_PUMP.get().asItem());
+				tabData.accept(GeneticPlaygroundModItems.EXPLOSIVE_PLASMID.get());
 			}).build());
-
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(GeneticPlaygroundModItems.CULTIVATED_CREEPER_SPAWN_EGG.get());
-		}
-	}
 }

@@ -1011,6 +1011,88 @@ public class PlasmidInjectorOnTickUpdateProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
+		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.EXPLOSIVE_PLASMID.get()) {
+			if (getEnergyStored(world, BlockPos.containing(x, y, z), null) >= 350000 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.EXPLOSIVE_PLASMID.get()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 12).getCount() < 1) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("maxTimer", 400);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "timer") > 400) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("timer", 0);
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					plasmid = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).copy();
+					slot1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).copy();
+					{
+						final String _tagName = "Injectable";
+						final boolean _tagValue = true;
+						CustomData.update(DataComponents.CUSTOM_DATA, slot1, tag -> tag.putBoolean(_tagName, _tagValue));
+					}
+					{
+						final String _tagName = "InjectableExplosive";
+						final boolean _tagValue = true;
+						CustomData.update(DataComponents.CUSTOM_DATA, slot1, tag -> tag.putBoolean(_tagName, _tagValue));
+					}
+					{
+						final String _tagName = "explosive";
+						final boolean _tagValue = (plasmid.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("explosive"));
+						CustomData.update(DataComponents.CUSTOM_DATA, slot1, tag -> tag.putBoolean(_tagName, _tagValue));
+					}
+					if (world instanceof ILevelExtension _ext) {
+						IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
+						if (_entityStorage != null)
+							_entityStorage.extractEnergy(350000, false);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 0;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						int _slotid = 1;
+						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+						_stk.shrink(1);
+						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					}
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = slot1.copy();
+						_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("timer", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "timer") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			} else {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("timer", 0);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		} else {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);

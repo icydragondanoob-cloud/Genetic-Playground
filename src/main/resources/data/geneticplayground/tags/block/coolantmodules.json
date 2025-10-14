@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:snow_block",
+    "genetic_playground:unknown_block",
+    "minecraft:water",
+    "minecraft:packed_ice",
+    "minecraft:ice",
+    "minecraft:blue_ice"
+  ]
+}

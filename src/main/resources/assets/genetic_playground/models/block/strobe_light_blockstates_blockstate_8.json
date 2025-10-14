@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "genetic_playground:block/strobelightlime",
+    "particle": "genetic_playground:block/off_redstone_lamp_texture_je3_be2-1.png"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:aluminium_ingot"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:aluminium_block",
+    "count": 1
+  }
+}

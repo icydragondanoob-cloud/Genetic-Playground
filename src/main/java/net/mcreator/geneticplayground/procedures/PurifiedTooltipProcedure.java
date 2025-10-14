@@ -63,10 +63,13 @@ public class PurifiedTooltipProcedure {
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_COD_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("purified") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oPurified Blood"));
 		}
+		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_CREEPER_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("purified") == true) {
+			tooltip.add(1, Component.literal("\u00A77\u00A7oPurified Blood"));
+		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableSpeed") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
 			tooltip.add(2, Component.literal(" "));
-			tooltip.add(3, Component.literal(("\u00A72Speed:" + "\u00A7r " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("SpeedDNA"))));
+			tooltip.add(3, Component.literal(("\u00A72Speed:" + "\u00A7r " + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("SpeedDNA")))));
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableMilkable") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
@@ -81,7 +84,7 @@ public class PurifiedTooltipProcedure {
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableMaxHealth") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
 			tooltip.add(2, Component.literal(" "));
-			tooltip.add(3, Component.literal(("\u00A72Max Health:" + "\u00A7r " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("MaxHealthDNA"))));
+			tooltip.add(3, Component.literal(("\u00A72Max Health:" + "\u00A7r " + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("MaxHealthDNA")))));
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableWooly") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
@@ -116,12 +119,17 @@ public class PurifiedTooltipProcedure {
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableWaterSpeed") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
 			tooltip.add(2, Component.literal(" "));
-			tooltip.add(3, Component.literal(("\u00A72Water Speed:" + "\u00A7r " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("WaterSpeed"))));
+			tooltip.add(3, Component.literal(("\u00A72Water Speed:" + "\u00A7r " + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("WaterSpeed")))));
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableWaterbreathing") == true) {
 			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
 			tooltip.add(2, Component.literal(" "));
 			tooltip.add(3, Component.literal(("\u00A72Water Breathing:" + "\u00A7r " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Waterbreathing"))));
+		}
+		if (itemstack.getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableExplosive") == true) {
+			tooltip.add(1, Component.literal("\u00A77\u00A7oInjectable"));
+			tooltip.add(2, Component.literal(" "));
+			tooltip.add(3, Component.literal(("\u00A72Explosive:" + "\u00A7r " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("explosive"))));
 		}
 	}
 }

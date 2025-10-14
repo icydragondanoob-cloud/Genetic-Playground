@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:FluidTank"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "CUSTOM:EnergyBattery"
+      },
+      {
+        "value": "Items.BLAZE_POWDER"
+      },
+      {
+        "value": "CUSTOM:EnergyBattery"
+      },
+      {
+        "value": "Items.TORCH"
+      },
+      {
+        "value": "CUSTOM:FluidTank"
+      },
+      {
+        "value": "Items.TORCH"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HeatTank"
+    },
+    "name": "heat_tank_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "_fv": 79,
-  "_type": "procedure",
-  "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"108\" y=\"4\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_send_chat\"><value name=\"text\"><block type=\"text_join\"><mutation items=\"2\"></mutation><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\">Fluid: </field></block></value><value name=\"ADD1\"><block type=\"block_fluidtank_get\"><value name=\"tank\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value><value name=\"direction\"><block type=\"direction_unspecified\"></block></value></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><value name=\"actbar\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></next></block><block type=\"text_join\" x=\"229\" y=\"267\"><mutation items=\"5\"></mutation><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\">Energy: </field></block></value><value name=\"ADD1\"><block type=\"block_energy_get\"><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value><value name=\"direction\"><block type=\"direction_unspecified\"></block></value></block></value><value name=\"ADD2\"><block type=\"text_new_line\"></block></value></block></xml>",
-    "skipDependencyNullCheck": false
-  }
-}

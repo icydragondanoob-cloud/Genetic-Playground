@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    "b a",
+    "bb "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diorite"
+    },
+    "b": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:lab_walls",
+    "count": 5
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "genetic_playground:custom/solarpanel",
+  "textures": {
+    "all": "minecraft:block/daylight_detector_inverted_top",
+    "particle": "minecraft:block/daylight_detector_inverted_top",
+    "0": "genetic_playground:block/solarpaneltop",
+    "1": "genetic_playground:block/solarpaneltoptop",
+    "2": "genetic_playground:block/solarpaneltoplast",
+    "3": "genetic_playground:block/solarpanelstand"
+  },
+  "render_type": "solid"
+}

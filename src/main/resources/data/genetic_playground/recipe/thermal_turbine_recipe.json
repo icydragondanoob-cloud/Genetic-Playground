@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fgf"
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:monitor"
+    },
+    "b": {
+      "item": "genetic_playground:heat_tank"
+    },
+    "c": {
+      "item": "genetic_playground:lab_fan"
+    },
+    "d": {
+      "item": "genetic_playground:netherite_cable"
+    },
+    "e": {
+      "item": "genetic_playground:quantum_circuit"
+    },
+    "f": {
+      "item": "genetic_playground:lead_ingot"
+    },
+    "g": {
+      "item": "genetic_playground:lead_block"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:thermal_turbine",
+    "count": 1
+  }
+}

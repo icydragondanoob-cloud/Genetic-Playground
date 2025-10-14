@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"20\" y=\"143\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_string\"><value name=\"return\"><block type=\"text_join\"><mutation items=\"5\"></mutation><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\">Will insantantly shut down reactor</field></block></value><value name=\"ADD1\"><block type=\"text_new_line\"></block></value><value name=\"ADD2\"><block type=\"text\"><field name=\"TEXT\">However, will also render any remaining</field></block></value><value name=\"ADD3\"><block type=\"text_new_line\"></block></value><value name=\"ADD4\"><block type=\"text\"><field name=\"TEXT\">fuel rods as useless.</field></block></value></block></value></block></next></block><block type=\"block_energy_get\" x=\"1009\" y=\"813\"><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"coord_y\"></block></value><value name=\"z\"><block type=\"coord_z\"></block></value><value name=\"direction\"><block type=\"direction_unspecified\"></block></value></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

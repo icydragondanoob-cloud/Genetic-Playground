@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "minecraft:glass",
+        "1": "smooth_stone_texture_je2_be2-1.png_2-1.png_1",
+        "2": "bottom",
+        "missing": "smooth_stone_texture_je2_be2-1.png_2-1.png_1"
+      },
+      "name": "default"
+    }
+  }
+}

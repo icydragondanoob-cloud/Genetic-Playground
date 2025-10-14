@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "Blocks.REDSTONE_LAMP"
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LabLight"
+    },
+    "name": "lablight_recipe",
+    "namespace": "mod"
+  }
+}

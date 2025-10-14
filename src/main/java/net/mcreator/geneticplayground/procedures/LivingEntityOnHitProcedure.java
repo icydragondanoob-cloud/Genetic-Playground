@@ -15,6 +15,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.EnderMan;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.animal.horse.Mule;
 import net.minecraft.world.entity.animal.horse.Horse;
@@ -33,11 +34,14 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.geneticplayground.init.GeneticPlaygroundModItems;
 
@@ -73,11 +77,31 @@ public class LivingEntityOnHitProcedure {
 				final boolean _tagValue = true;
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putBoolean(_tagName, _tagValue));
 			}
+			{
+				final String _tagName = "SpeedDNA";
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity8.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "MaxHealthDNA";
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity11.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}
@@ -102,19 +126,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity19 && _livingEntity19.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity19.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity26 && _livingEntity26.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity26.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity22 && _livingEntity22.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity22.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity29 && _livingEntity29.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity29.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity25 && _livingEntity25.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity25.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity32 && _livingEntity32.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity32.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			if (world instanceof Level _level) {
@@ -122,6 +146,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}
@@ -146,19 +180,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity39 && _livingEntity39.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity39.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity47 && _livingEntity47.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity47.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity42 && _livingEntity42.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity42.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity50 && _livingEntity50.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity50.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity45 && _livingEntity45.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity45.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity53 && _livingEntity53.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity53.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			if (world instanceof Level _level) {
@@ -166,6 +200,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}
@@ -180,19 +224,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity55 && _livingEntity55.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity55.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity64 && _livingEntity64.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity64.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity58 && _livingEntity58.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity58.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity67 && _livingEntity67.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity67.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity61 && _livingEntity61.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity61.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity70 && _livingEntity70.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity70.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
@@ -207,6 +251,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE.get() && entity instanceof Rabbit) {
 			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 1);
@@ -219,19 +273,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity73 && _livingEntity73.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity73.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity83 && _livingEntity83.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity83.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity76 && _livingEntity76.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity76.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity86 && _livingEntity86.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity86.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity79 && _livingEntity79.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity79.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity89 && _livingEntity89.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity89.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
@@ -246,6 +300,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE.get() && entity instanceof Horse) {
 			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 1);
@@ -258,19 +322,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity91 && _livingEntity91.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity91.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity102 && _livingEntity102.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity102.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity94 && _livingEntity94.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity94.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity105 && _livingEntity105.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity105.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity97 && _livingEntity97.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity97.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity108 && _livingEntity108.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity108.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			if (world instanceof Level _level) {
@@ -278,6 +342,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}
@@ -292,19 +366,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity107 && _livingEntity107.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity107.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity119 && _livingEntity119.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity119.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity110 && _livingEntity110.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity110.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity122 && _livingEntity122.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity122.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity113 && _livingEntity113.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity113.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity125 && _livingEntity125.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity125.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			if (world instanceof Level _level) {
@@ -312,6 +386,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}
@@ -326,19 +410,19 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity123 && _livingEntity123.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity123.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity136 && _livingEntity136.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity136.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity126 && _livingEntity126.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity126.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity139 && _livingEntity139.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity139.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity129 && _livingEntity129.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity129.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity142 && _livingEntity142.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity142.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			if (world instanceof Level _level) {
@@ -346,6 +430,16 @@ public class LivingEntityOnHitProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
 				}
 			}
 		}
@@ -375,13 +469,13 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity145 && _livingEntity145.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity145.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity159 && _livingEntity159.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity159.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity148 && _livingEntity148.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity148.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity162 && _livingEntity162.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity162.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
@@ -394,8 +488,18 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity152 && _livingEntity152.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity152.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity166 && _livingEntity166.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity166.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
 			}
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE.get() && entity instanceof Cod) {
@@ -414,13 +518,13 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity163 && _livingEntity163.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity163.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity178 && _livingEntity178.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity178.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity166 && _livingEntity166.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity166.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity181 && _livingEntity181.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity181.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
@@ -433,13 +537,23 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity170 && _livingEntity170.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity170.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity185 && _livingEntity185.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity185.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "WaterSpeed";
 				final double _tagValue = 5;
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
 			}
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE.get() && entity instanceof Salmon) {
@@ -458,13 +572,13 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "SpeedDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity183 && _livingEntity183.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity183.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity199 && _livingEntity199.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity199.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "SpeedEffDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity186 && _livingEntity186.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
-						? _livingEntity186.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity202 && _livingEntity202.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity202.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
 						: 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
@@ -477,13 +591,72 @@ public class LivingEntityOnHitProcedure {
 			}
 			{
 				final String _tagName = "MaxHealthDNA";
-				final double _tagValue = (entity instanceof LivingEntity _livingEntity190 && _livingEntity190.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity190.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity206 && _livingEntity206.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity206.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
 				final String _tagName = "WaterSpeed";
 				final double _tagValue = 4;
 				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
+		}
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE.get() && entity instanceof Creeper) {
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 1);
+			if (sourceentity instanceof LivingEntity _entity) {
+				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE_OF_CREEPER_BLOOD.get()).copy();
+				_setstack.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				if (_entity instanceof Player _player)
+					_player.getInventory().setChanged();
+			}
+			{
+				final String _tagName = "explosive";
+				final boolean _tagValue = true;
+				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putBoolean(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "SpeedDNA";
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity220 && _livingEntity220.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity220.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0);
+				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "SpeedEffDNA";
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity223 && _livingEntity223.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY)
+						? _livingEntity223.getAttribute(Attributes.MOVEMENT_EFFICIENCY).getBaseValue()
+						: 0);
+				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.NEUTRAL, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.NEUTRAL, 1, 1, false);
+				}
+			}
+			{
+				final String _tagName = "MaxHealthDNA";
+				final double _tagValue = (entity instanceof LivingEntity _livingEntity227 && _livingEntity227.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity227.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0);
+				CustomData.update(DataComponents.CUSTOM_DATA, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (sourceentity instanceof ServerPlayer _player) {
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("genetic_playground:first_blood"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
 			}
 		}
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get()
@@ -496,13 +669,13 @@ public class LivingEntityOnHitProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			if (entity instanceof LivingEntity _livingEntity204 && _livingEntity204.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
-				_livingEntity204.getAttribute(Attributes.MOVEMENT_SPEED)
+			if (entity instanceof LivingEntity _livingEntity240 && _livingEntity240.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+				_livingEntity240.getAttribute(Attributes.MOVEMENT_SPEED)
 						.setBaseValue(((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("SpeedDNA")));
-			if (entity instanceof LivingEntity _livingEntity207 && _livingEntity207.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY))
-				_livingEntity207.getAttribute(Attributes.MOVEMENT_EFFICIENCY)
+			if (entity instanceof LivingEntity _livingEntity243 && _livingEntity243.getAttributes().hasAttribute(Attributes.MOVEMENT_EFFICIENCY))
+				_livingEntity243.getAttribute(Attributes.MOVEMENT_EFFICIENCY)
 						.setBaseValue(((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("SpeedEffDNA")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -520,10 +693,10 @@ public class LivingEntityOnHitProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			if (entity instanceof LivingEntity _livingEntity218 && _livingEntity218.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
-				_livingEntity218.getAttribute(Attributes.MAX_HEALTH)
+			if (entity instanceof LivingEntity _livingEntity254 && _livingEntity254.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
+				_livingEntity254.getAttribute(Attributes.MAX_HEALTH)
 						.setBaseValue(((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("MaxHealthDNA")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -543,7 +716,7 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("GrazingGene",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("GrazingGene")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -563,7 +736,7 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("WoolyGene",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("WoolyGene")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -583,7 +756,7 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("MilkableGene",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("MilkableGene")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -633,14 +806,14 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("Hydrophobia",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Hydrophobia")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
-			if (entity instanceof Player _player) {
+			if (sourceentity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(Items.MILK_BUCKET).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
@@ -658,7 +831,7 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("TeleportationGene",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("TeleportationGene")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -677,7 +850,7 @@ public class LivingEntityOnHitProcedure {
 				}
 			}
 			entity.getPersistentData().putBoolean("EggGene", ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("EggGene")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -697,7 +870,7 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("HigherJump",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("HigherJump")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -715,10 +888,10 @@ public class LivingEntityOnHitProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			if (entity instanceof LivingEntity _livingEntity328 && _livingEntity328.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED))
-				_livingEntity328.getAttribute(NeoForgeMod.SWIM_SPEED)
+			if (entity instanceof LivingEntity _livingEntity364 && _livingEntity364.getAttributes().hasAttribute(NeoForgeMod.SWIM_SPEED))
+				_livingEntity364.getAttribute(NeoForgeMod.SWIM_SPEED)
 						.setBaseValue(((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("WaterSpeed")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -738,7 +911,27 @@ public class LivingEntityOnHitProcedure {
 			}
 			entity.getPersistentData().putBoolean("Waterbreathing",
 					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Waterbreathing")));
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
+				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
+				_setstack.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				if (_entity instanceof Player _player)
+					_player.getInventory().setChanged();
+			}
+		}
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_STERILE_BLOOD.get()
+				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("InjectableExplosive") == true) {
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 1);
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("genetic_playground:syringe.stab")), SoundSource.PLAYERS, 1, 1, false);
+				}
+			}
+			entity.getPersistentData().putBoolean("Explosive",
+					((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("explosive")));
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = new ItemStack(GeneticPlaygroundModItems.SYRINGE.get()).copy();
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);

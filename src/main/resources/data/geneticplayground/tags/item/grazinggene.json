@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "genetic_playground:sheep_cell",
+    "genetic_playground:cow_cell",
+    "genetic_playground:pig_cell"
+  ]
+}

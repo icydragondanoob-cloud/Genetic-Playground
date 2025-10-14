@@ -80,6 +80,7 @@ public class BloodCentrifugeGUIScreen extends AbstractContainerScreen<BloodCentr
 		guiGraphics.blit(ResourceLocation.parse("genetic_playground:textures/screens/syringe-1.png_4.png"), this.leftPos + 53, this.topPos + 41, 0, 0, 16, 16, 16, 16);
 		guiGraphics.blit(ResourceLocation.parse("genetic_playground:textures/screens/syringe-1.png_4.png"), this.leftPos + 100, this.topPos + 30, 0, 0, 16, 16, 16, 16);
 		guiGraphics.blit(ResourceLocation.parse("genetic_playground:textures/screens/new_piskel-1.png_75.png"), this.leftPos + 151, this.topPos + 14, 0, 0, 18, 66, 18, 66);
+		guiGraphics.blit(ResourceLocation.parse("genetic_playground:textures/screens/syringe-1.png_4.png"), this.leftPos + 134, this.topPos + 63, 0, 0, 16, 16, 16, 16);
 		guiGraphics.blit(ResourceLocation.parse("genetic_playground:textures/screens/spritesheet_12.png"), this.leftPos + 8, this.topPos + 16, Mth.clamp((int) BatterySpritesheetProcedureProcedure.execute(world, x, y, z) * 16, 0, 880), 0, 16, 64, 896,
 				64);
 		guiGraphics.blit(ResourceLocation.parse("genetic_playground:textures/screens/spritesheet_3.png"), this.leftPos + 72, this.topPos + 41, Mth.clamp((int) ProgressUpdaterProcedure.execute(world, x, y, z) * 24, 0, 504), 0, 24, 16, 528, 16);

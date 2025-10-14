@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Blocks.GLASS_PANE"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FluidTank"
+    },
+    "name": "fluid_tank_recipe",
+    "namespace": "mod"
+  }
+}

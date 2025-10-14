@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aab",
+    "ccb",
+    "ddb"
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:syringe"
+    },
+    "b": {
+      "item": "genetic_playground:energy_battery"
+    },
+    "c": {
+      "item": "genetic_playground:circuit"
+    },
+    "d": {
+      "item": "genetic_playground:aluminium_block"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:plasmid_injection_chamber",
+    "count": 1
+  }
+}

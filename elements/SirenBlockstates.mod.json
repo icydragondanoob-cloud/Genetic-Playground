@@ -1,0 +1,35 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Siren",
+    "blockstateList": [
+      {
+        "texture": "off_redstone_lamp_texture_je3_be2-2.png-1.png_4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "off_redstone_lamp_texture_je3_be2-2.png-1.png_5",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

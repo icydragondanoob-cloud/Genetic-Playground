@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:copper_wire"
+    },
+    "b": {
+      "item": "genetic_playground:aluminium_ingot"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:aluminium_cable",
+    "count": 4
+  }
+}

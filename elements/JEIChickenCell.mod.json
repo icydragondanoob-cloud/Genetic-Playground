@@ -1,0 +1,21 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "blood_centrifuge_jei",
+    "result": {
+      "value": "CUSTOM:ChickenCell"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "CUSTOM:SyringeOfChickenBlood"
+      }
+    ],
+    "integers": [
+      1
+    ],
+    "strings": [],
+    "recipetype": "BloodCentrifugeJEI"
+  }
+}

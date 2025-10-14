@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 5,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LabWalls"
+    },
+    "name": "lab_wall_recipe",
+    "namespace": "mod"
+  }
+}

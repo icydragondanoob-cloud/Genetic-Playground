@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:composter_bottom",
+    "texture": "creativeenergy",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -89,7 +89,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "AMETHYST_BLOCK"
     },
     "breakSound": {
       "value": ""

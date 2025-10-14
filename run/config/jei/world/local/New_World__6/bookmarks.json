@@ -1,5 +1,0 @@
-[
-  {"version":2},
-  {"ingredient":{"id":"genetic_playground:dna_extractor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"genetic_playground:double_helix_grazing","components":{"minecraft:custom_data":{"GrazingGene":1}}},"type":"item_stack","bookmarkType":"INGREDIENT"}
-]

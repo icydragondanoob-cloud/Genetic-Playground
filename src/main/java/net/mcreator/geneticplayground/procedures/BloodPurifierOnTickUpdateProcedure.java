@@ -1550,6 +1550,8 @@ public class BloodPurifierOnTickUpdateProcedure {
 			BloodPuriferCodProcedure.execute(world, x, y, z);
 		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_SALMON_BLOOD.get()) {
 			BloodPuriferSalmonProcedure.execute(world, x, y, z);
+		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.SYRINGE_OF_CREEPER_BLOOD.get()) {
+			BloodPuriferCreeperProcedure.execute(world, x, y, z);
 		} else {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);

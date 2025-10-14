@@ -43,6 +43,8 @@ public class DNAExtractorOnTickUpdateProcedure {
 			CodDNAExtractionProcedure.execute(world, x, y, z);
 		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.SALMON_CELL.get()) {
 			SalmonDNAExtractionProcedure.execute(world, x, y, z);
+		} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == GeneticPlaygroundModItems.CREEPER_CELL.get()) {
+			CreeperDNAExtractionProcedure.execute(world, x, y, z);
 		} else {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);

@@ -1,0 +1,35 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "uraniumdecayjei2.png",
+    "width": 175,
+    "height": 73,
+    "icon": {
+      "value": "CUSTOM:UraniumFuelRod"
+    },
+    "craftingtables": [
+      {
+        "value": "CUSTOM:FissionPowerPlantController"
+      }
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "title": "Uranium Fuel Rod Decay",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 18,
+        "y": 27,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 144,
+        "y": 27,
+        "slotid": 0
+      }
+    ]
+  }
+}

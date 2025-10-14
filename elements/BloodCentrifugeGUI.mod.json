@@ -227,6 +227,16 @@
           "y": 79,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "syringe-1.png_4.png",
+          "use1Xscale": false,
+          "x": 260,
+          "y": 100,
+          "locked": false
+        }
       }
     ],
     "onTick": {

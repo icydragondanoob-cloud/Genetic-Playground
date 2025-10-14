@@ -72,6 +72,7 @@ public class GeneticPlaygroundModVariables {
 				clone.TimerWool = original.TimerWool;
 				clone.TimerEgg = original.TimerEgg;
 				clone.Waterbreathing = original.Waterbreathing;
+				clone.Explosive = original.Explosive;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -89,6 +90,7 @@ public class GeneticPlaygroundModVariables {
 		public double TimerWool = 0;
 		public double TimerEgg = 0;
 		public boolean Waterbreathing = false;
+		public boolean Explosive = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -104,6 +106,7 @@ public class GeneticPlaygroundModVariables {
 			nbt.putDouble("TimerWool", TimerWool);
 			nbt.putDouble("TimerEgg", TimerEgg);
 			nbt.putBoolean("Waterbreathing", Waterbreathing);
+			nbt.putBoolean("Explosive", Explosive);
 			return nbt;
 		}
 
@@ -120,6 +123,7 @@ public class GeneticPlaygroundModVariables {
 			TimerWool = nbt.getDouble("TimerWool");
 			TimerEgg = nbt.getDouble("TimerEgg");
 			Waterbreathing = nbt.getBoolean("Waterbreathing");
+			Explosive = nbt.getBoolean("Explosive");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

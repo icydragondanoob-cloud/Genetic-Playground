@@ -13,6 +13,7 @@
     "genetic_playground:double_helix_grazing",
     "genetic_playground:double_helix_wooly",
     "genetic_playground:double_helix_movement_speed",
-    "genetic_playground:double_helix_water_breathing"
+    "genetic_playground:double_helix_water_breathing",
+    "genetic_playground:double_helix_explosive"
   ]
 }

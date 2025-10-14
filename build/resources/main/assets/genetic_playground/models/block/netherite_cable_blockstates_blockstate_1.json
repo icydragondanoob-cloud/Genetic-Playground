@@ -1,7 +1,7 @@
 {
   "parent": "genetic_playground:custom/netheritecablefull",
   "textures": {
-    "all": ":block/",
+    "all": "genetic_playground:block/",
     "particle": "minecraft:block/netherite_block",
     "0": "genetic_playground:block/cablenetherite"
   },

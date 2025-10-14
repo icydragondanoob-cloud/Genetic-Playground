@@ -1,6 +1,7 @@
 package net.mcreator.geneticplayground.world.inventory;
 
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
+import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
@@ -36,7 +37,7 @@ public class FissionPowerPlantGUIMenu extends AbstractContainerMenu implements G
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 4)
+			if (!this.containsKey(key) && this.size() >= 51)
 				return null;
 			return super.put(key, value);
 		}
@@ -56,7 +57,7 @@ public class FissionPowerPlantGUIMenu extends AbstractContainerMenu implements G
 		super(GeneticPlaygroundModMenus.FISSION_POWER_PLANT_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(0);
+		this.internal = new ItemStackHandler(15);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -93,11 +94,86 @@ public class FissionPowerPlantGUIMenu extends AbstractContainerMenu implements G
 				}
 			}
 		}
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 53, 45) {
+			private final int slot = 0;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 139, 100) {
+			private final int slot = 14;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 74, 45) {
+			private final int slot = 1;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 139, 45) {
+			private final int slot = 4;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 96, 45) {
+			private final int slot = 2;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 118, 45) {
+			private final int slot = 3;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 74, 73) {
+			private final int slot = 6;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 96, 73) {
+			private final int slot = 7;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 118, 73) {
+			private final int slot = 8;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 139, 73) {
+			private final int slot = 9;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 53, 73) {
+			private final int slot = 5;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 53, 100) {
+			private final int slot = 10;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 74, 100) {
+			private final int slot = 11;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 96, 100) {
+			private final int slot = 12;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 118, 100) {
+			private final int slot = 13;
+			private int x = FissionPowerPlantGUIMenu.this.x;
+			private int y = FissionPowerPlantGUIMenu.this.y;
+		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 3 + 8 + sj * 18, 30 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 34 + 8 + sj * 18, 38 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 3 + 8 + si * 18, 30 + 142));
+			this.addSlot(new Slot(inv, si, 34 + 8 + si * 18, 38 + 142));
 	}
 
 	@Override
@@ -120,16 +196,16 @@ public class FissionPowerPlantGUIMenu extends AbstractContainerMenu implements G
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 0) {
-				if (!this.moveItemStackTo(itemstack1, 0, this.slots.size(), true))
+			if (index < 15) {
+				if (!this.moveItemStackTo(itemstack1, 15, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 0, false)) {
-				if (index < 0 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 0 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 15, false)) {
+				if (index < 15 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 15 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 0, 0 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 15, 15 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

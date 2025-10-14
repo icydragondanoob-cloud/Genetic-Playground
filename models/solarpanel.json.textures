@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "solarpaneltop",
+        "1": "solarpaneltoptop",
+        "2": "solarpaneltoplast",
+        "3": "solarpanelstand"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "genetic_playground:blood_centrifuge_jei",
+  "ingredients": [
+    {
+      "item": "genetic_playground:syringe_of_enderman_enderfluid"
+    }
+  ],
+  "output": {
+    "id": "genetic_playground:enderman_cell",
+    "count": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "genetic_playground:blood_extraction_jei",
+  "ingredients": [
+    {
+      "item": "genetic_playground:cow_cell"
+    }
+  ],
+  "output": {
+    "id": "genetic_playground:double_helix_milkable",
+    "count": 1
+  }
+}

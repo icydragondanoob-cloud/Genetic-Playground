@@ -1,0 +1,75 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "uyguyguguyguyguyg2.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "buttonunclicked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpentFuelRedstoneSignalClickedHide"
+          },
+          "x": 228,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "buttonclicked.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SpentFuelRedstoneSignalClickedShow"
+          },
+          "x": 228,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_buttonborder2",
+          "image": "buttonborder.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "SpentFuelRedstoneClicked"
+          },
+          "x": 228,
+          "y": 73,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "HeatTurbineGUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

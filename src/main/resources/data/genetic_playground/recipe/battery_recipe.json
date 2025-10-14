@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "genetic_playground:copper_wire"
+    },
+    "b": {
+      "item": "genetic_playground:fluid_tank"
+    }
+  },
+  "result": {
+    "id": "genetic_playground:energy_battery",
+    "count": 1
+  }
+}

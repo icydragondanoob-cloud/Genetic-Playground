@@ -1,0 +1,56 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:FluidTank"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:FluidTank"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EnergyBattery"
+    },
+    "name": "battery_recipe",
+    "namespace": "mod"
+  }
+}

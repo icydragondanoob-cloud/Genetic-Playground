@@ -1,0 +1,67 @@
+{
+  "_fv": 79,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "plasmid_synthesiser_jei_type",
+    "result": {
+      "value": "CUSTOM:EggPlasmid"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:DoubleHelixEgg"
+      },
+      {
+        "value": "CUSTOM:EmptyPlasmid"
+      }
+    ],
+    "integers": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "PlasmidSynthesiserJEIType"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:UnknownIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "Blocks.NETHERITE_BLOCK"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      },
+      {
+        "value": "CUSTOM:UnknownIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:UnknownBlock"
+    },
+    "name": "unknown_block_recipe",
+    "namespace": "mod"
+  }
+}

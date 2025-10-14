@@ -1,0 +1,12 @@
+{
+  "type": "genetic_playground:blood_centrifuge_jei",
+  "ingredients": [
+    {
+      "item": "genetic_playground:syringe_of_chicken_blood"
+    }
+  ],
+  "output": {
+    "id": "genetic_playground:chicken_cell",
+    "count": 2
+  }
+}

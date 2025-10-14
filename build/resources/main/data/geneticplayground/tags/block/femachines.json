@@ -4,14 +4,15 @@
     "genetic_playground:dna_extractor",
     "genetic_playground:cell_analyzer",
     "genetic_playground:netherite_cable",
-    "genetic_playground:blood_centrifuge",
     "genetic_playground:plasmid_synthesiser",
+    "genetic_playground:thermal_turbine",
+    "genetic_playground:creative_energy_block",
+    "genetic_playground:aluminium_cable",
+    "genetic_playground:blood_centrifuge",
     "genetic_playground:gold_cable",
-    "genetic_playground:electric_pump",
     "genetic_playground:blood_purifier",
     "genetic_playground:plasmid_injection_chamber",
-    "genetic_playground:creative_energy_block",
-    "genetic_playground:fission_power_plant_controller",
-    "genetic_playground:aluminium_cable"
+    "genetic_playground:solar_panel",
+    "genetic_playground:heat_generator"
   ]
 }

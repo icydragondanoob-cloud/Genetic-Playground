@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AluminiumCable"
+    },
+    "name": "aluminium_cable_recipe",
+    "namespace": "mod"
+  }
+}

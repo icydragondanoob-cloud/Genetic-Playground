@@ -20,7 +20,7 @@ import net.mcreator.geneticplayground.block.entity.CreativeEnergyBlockBlockEntit
 
 public class CreativeEnergyBlockBlock extends Block implements EntityBlock {
 	public CreativeEnergyBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(1f, 10f));
 	}
 
 	@Override

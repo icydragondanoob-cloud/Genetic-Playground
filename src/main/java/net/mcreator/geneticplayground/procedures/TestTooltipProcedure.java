@@ -63,14 +63,17 @@ public class TestTooltipProcedure {
 		if (itemstack.getItem() == GeneticPlaygroundModItems.COD_CELL.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("analyzed") == true) {
 			tooltip.add(Component.literal("\u00A77\u00A7oAnalyzed"));
 		}
+		if (itemstack.getItem() == GeneticPlaygroundModItems.CREEPER_CELL.get() && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("analyzed") == true) {
+			tooltip.add(Component.literal("\u00A77\u00A7oAnalyzed"));
+		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_MOVEMENT_SPEED.get()) {
-			tooltip.add(Component.literal(("\u00A72Speed DNA: " + "\u00A7r" + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("SpeedDNA"))));
+			tooltip.add(Component.literal(("\u00A72Speed DNA: " + "\u00A7r" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("SpeedDNA")))));
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_MILKABLE.get()) {
 			tooltip.add(Component.literal("\u00A79Milkable "));
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_MAX_HEALTH.get()) {
-			tooltip.add(Component.literal(("\u00A72Max Health DNA: " + "\u00A7r" + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("MaxhealthDNA"))));
+			tooltip.add(Component.literal(("\u00A72Max Health DNA: " + "\u00A7r" + new java.text.DecimalFormat("##.##").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("MaxhealthDNA")))));
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_GRAZING.get()) {
 			tooltip.add(Component.literal("\u00A79Eat Grass"));
@@ -95,6 +98,9 @@ public class TestTooltipProcedure {
 		}
 		if (itemstack.getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_WATER_BREATHING.get()) {
 			tooltip.add(Component.literal("\u00A79Water Breathing"));
+		}
+		if (itemstack.getItem() == GeneticPlaygroundModItems.DOUBLE_HELIX_EXPLOSIVE.get()) {
+			tooltip.add(Component.literal("\u00A79Explosive"));
 		}
 	}
 }

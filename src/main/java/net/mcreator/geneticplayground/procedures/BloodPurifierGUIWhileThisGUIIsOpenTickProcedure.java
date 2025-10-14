@@ -28,7 +28,7 @@ public class BloodPurifierGUIWhileThisGUIIsOpenTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-FE") + " FE"));
+					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-FE")) + " FE"));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -68,7 +68,7 @@ public class BloodPurifierGUIWhileThisGUIIsOpenTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (Math.round(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-MFE")) + " MFE"));
+					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-MFE")) + " MFE"));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -88,7 +88,7 @@ public class BloodPurifierGUIWhileThisGUIIsOpenTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (Math.round(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-GFE")) + " GFE"));
+					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-GFE")) + " GFE"));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -108,7 +108,7 @@ public class BloodPurifierGUIWhileThisGUIIsOpenTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (Math.round(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-TFE")) + " TFE"));
+					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-TFE")) + " TFE"));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -128,7 +128,7 @@ public class BloodPurifierGUIWhileThisGUIIsOpenTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (Math.round(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-PFE")) + " PFE"));
+					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-PFE")) + " PFE"));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -148,7 +148,7 @@ public class BloodPurifierGUIWhileThisGUIIsOpenTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (Math.round(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-EFE")) + " EFE"));
+					_blockEntity.getPersistentData().putString("BlockEnergyCounter", (new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "Block-EFE")) + " EFE"));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

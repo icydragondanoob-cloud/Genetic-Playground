@@ -1,0 +1,12 @@
+{
+  "type": "genetic_playground:blood_extraction_jei",
+  "ingredients": [
+    {
+      "tag": "geneticplayground:cells"
+    }
+  ],
+  "output": {
+    "id": "genetic_playground:double_helix_failed",
+    "count": 1
+  }
+}

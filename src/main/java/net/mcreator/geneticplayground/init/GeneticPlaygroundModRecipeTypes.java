@@ -11,7 +11,10 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.geneticplayground.jei_recipes.UraniumFuelRodDecayRecipe;
 import net.mcreator.geneticplayground.jei_recipes.PlasmidSynthesiserJEITypeRecipe;
+import net.mcreator.geneticplayground.jei_recipes.BloodExtractionJEIRecipe;
+import net.mcreator.geneticplayground.jei_recipes.BloodCentrifugeJEIRecipe;
 import net.mcreator.geneticplayground.GeneticPlaygroundMod;
 
 @EventBusSubscriber(modid = GeneticPlaygroundMod.MODID, bus = EventBusSubscriber.Bus.MOD)
@@ -27,6 +30,12 @@ public class GeneticPlaygroundModRecipeTypes {
 			SERIALIZERS.register(bus);
 			RECIPE_TYPES.register("plasmid_synthesiser_jei_type", () -> PlasmidSynthesiserJEITypeRecipe.Type.INSTANCE);
 			SERIALIZERS.register("plasmid_synthesiser_jei_type", () -> PlasmidSynthesiserJEITypeRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("blood_centrifuge_jei", () -> BloodCentrifugeJEIRecipe.Type.INSTANCE);
+			SERIALIZERS.register("blood_centrifuge_jei", () -> BloodCentrifugeJEIRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("blood_extraction_jei", () -> BloodExtractionJEIRecipe.Type.INSTANCE);
+			SERIALIZERS.register("blood_extraction_jei", () -> BloodExtractionJEIRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("uranium_fuel_rod_decay", () -> UraniumFuelRodDecayRecipe.Type.INSTANCE);
+			SERIALIZERS.register("uranium_fuel_rod_decay", () -> UraniumFuelRodDecayRecipe.Serializer.INSTANCE);
 		});
 	}
 }
