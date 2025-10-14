@@ -1,9 +1,0 @@
-{
-  "parent": "genetic_playground:custom/labfacade2",
-  "textures": {
-    "all": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
-    "particle": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3",
-    "0": "genetic_playground:block/stone_bricks_texture_je3_be2-1.png_3"
-  },
-  "render_type": "solid"
-}

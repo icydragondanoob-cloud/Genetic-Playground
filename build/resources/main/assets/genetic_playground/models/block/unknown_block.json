@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "genetic_playground:block/unknownblock",
-    "particle": "genetic_playground:block/unknownblock"
-  },
-  "render_type": "solid"
-}

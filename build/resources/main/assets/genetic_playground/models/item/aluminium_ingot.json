@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "genetic_playground:item/iron_ingot_je3_be2-1.png"
-  }
-}

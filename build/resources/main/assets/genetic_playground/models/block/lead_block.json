@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "genetic_playground:block/lead",
-    "particle": "genetic_playground:block/lead"
-  },
-  "render_type": "solid"
-}

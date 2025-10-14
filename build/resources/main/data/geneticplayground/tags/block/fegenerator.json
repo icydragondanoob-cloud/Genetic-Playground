@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "genetic_playground:thermal_turbine",
-    "genetic_playground:solar_panel",
-    "genetic_playground:creative_energy_block",
-    "genetic_playground:heat_generator"
-  ]
-}

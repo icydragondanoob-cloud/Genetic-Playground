@@ -1,9 +1,0 @@
-{
-  "parent": "genetic_playground:custom/biohazardsignred",
-  "textures": {
-    "all": "minecraft:block/red_concrete",
-    "particle": "minecraft:block/yellow_concrete",
-    "0": "genetic_playground:block/biohazardsignred"
-  },
-  "render_type": "solid"
-}

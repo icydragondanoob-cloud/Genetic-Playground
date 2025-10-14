@@ -1,9 +1,0 @@
-{
-  "parent": "genetic_playground:custom/goldcablealone",
-  "textures": {
-    "all": "genetic_playground:block/blockofcopper",
-    "particle": "minecraft:block/gold_block",
-    "0": "genetic_playground:block/cable1"
-  },
-  "render_type": "solid"
-}

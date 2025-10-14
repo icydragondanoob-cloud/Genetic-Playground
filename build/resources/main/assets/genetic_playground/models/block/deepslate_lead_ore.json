@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "genetic_playground:block/leaddeepslate",
-    "particle": "genetic_playground:block/leaddeepslate"
-  },
-  "render_type": "solid"
-}

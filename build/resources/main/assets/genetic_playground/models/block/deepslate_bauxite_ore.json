@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "genetic_playground:block/bauxitedeepslateore",
-    "particle": "genetic_playground:block/bauxitedeepslateore"
-  },
-  "render_type": "solid"
-}
