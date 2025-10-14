@@ -1,4 +1,4 @@
-- Made with MCreator for CurseForge Modjam by IcyDragonTheNoob, MIT license, credits go to PYLO for MCreator.
+- Made with MCreator for CurseForge Modjam by IcyDragonTheNoob, ARR license, credits go to PYLO for MCreator.
 - Just Enough Items are supported
 - Mod is in beta, please expect bugs.
 
