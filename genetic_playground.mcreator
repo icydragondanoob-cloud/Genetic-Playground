@@ -7606,6 +7606,7 @@
       "src/main/resources/data/genetic_playground/tags/item/jei_empty_tag.json",
       "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModJeiPlugin.java",
       "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModRecipeTypes.java",
+      "src/main/java/net/mcreator/geneticplayground/jei_recipes/EmptyIngredient.java",
       "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModKeyMappings.java",
       "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModBrewingRecipes.java",
       "src/main/java/net/mcreator/geneticplayground/init/GeneticPlaygroundModBlocks.java",
@@ -7669,11 +7670,11 @@
   "workspaceSettings": {
     "modid": "genetic_playground",
     "modName": "Genetic Playground",
-    "version": "1.0.0",
-    "description": "Genetic Playground adds genetic engineering to Minecraft 1.21.1, originally made for the CurseForge modjam 2025. ",
+    "version": "1.0.1",
+    "description": "Genetic Playground adds genetic engineering to Minecraft, originally made for the CurseForge modjam 2025. ",
     "author": "IcyDragonTheNoob",
     "websiteURL": "https://discord.gg/36RxX8PGHC",
-    "license": "MIT License",
+    "license": "All Rights Reserved",
     "serverSideOnly": false,
     "modPicture": "logogeneticplayground",
     "requiredMods": [],
@@ -7682,7 +7683,7 @@
     "mcreatorDependencies": [
       "jei"
     ],
-    "currentGenerator": "neoforge-1.21.1",
+    "currentGenerator": "neoforge-1.21.4",
     "credits": "Mod made by IcyDragonTheNoob, sounds from Freesounds.com, made with MCreator by PYLO.",
     "modElementsPackage": "net.mcreator.geneticplayground"
   },

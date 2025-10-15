@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:clay_ball",
+    "b": "genetic_playground:circuit"
+  },
+  "result": {
+    "id": "genetic_playground:machine_speed_upgrade",
+    "count": 1
+  }
+}

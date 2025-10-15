@@ -11,14 +11,13 @@ import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 
-import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.util.FormattedCharSequence;
-import net.minecraft.util.FastColor;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.renderer.texture.AbstractTexture;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.gui.components.AbstractWidget;
@@ -26,6 +25,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.Minecraft;
 
+import java.util.function.Function;
 import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -33,6 +33,8 @@ import com.mojang.blaze3d.systems.RenderSystem;
 public class FluidStackWidget extends AbstractWidget {
 	private final Screen screen;
 	private final FluidTank tank;
+	private final ResourceLocation BLOCK_ATLAS = ResourceLocation.withDefaultNamespace("textures/atlas/blocks.png");
+	private final Function<ResourceLocation, RenderType> RENDER = RenderType.GUI_TEXTURED; // .apply(BLOCK_ATLAS);
 
 	public FluidStackWidget(Screen screen, FluidTank tank, int x, int y, int width, int height) {
 		super(x, y, width, height, Component.empty());
@@ -49,12 +51,11 @@ public class FluidStackWidget extends AbstractWidget {
 			FluidStack fluidStack = tank.getFluid();
 			IClientFluidTypeExtensions props = IClientFluidTypeExtensions.of(fluidStack.getFluid());
 			ResourceLocation still = props.getStillTexture(fluidStack);
-			AbstractTexture texture = minecraft.getTextureManager().getTexture(InventoryMenu.BLOCK_ATLAS);
+			AbstractTexture texture = minecraft.getTextureManager().getTexture(BLOCK_ATLAS);
 			if (texture instanceof TextureAtlas atlas) {
 				atlas = (TextureAtlas) texture;
 				TextureAtlasSprite sprite = atlas.getSprite(still);
 				int color = props.getTintColor();
-				RenderSystem.setShaderColor((float) FastColor.ARGB32.red(color) / 255.0F, (float) FastColor.ARGB32.green(color) / 255.0F, (float) FastColor.ARGB32.blue(color) / 255.0F, (float) FastColor.ARGB32.alpha(color) / 255.0F);
 				RenderSystem.enableBlend();
 				int stored = tank.getFluidAmount();
 				float capacity = (float) tank.getCapacity();
@@ -67,8 +68,8 @@ public class FluidStackWidget extends AbstractWidget {
 				for (int i = 0; (double) i < Math.ceil((double) ((float) renderableHeight / 16.0F)); ++i) {
 					int drawingHeight = Math.min(16, renderableHeight - 16 * i);
 					int notDrawingHeight = 16 - drawingHeight;
-					guiGraphics.blit(InventoryMenu.BLOCK_ATLAS, this.getX(), this.getY() + notDrawingHeight, 0, sprite.getU0() * (float) atlasWidth, sprite.getV0() * (float) atlasHeight + (float) notDrawingHeight, this.getWidth(), drawingHeight,
-							atlasWidth, atlasHeight);
+					guiGraphics.blit(RenderType::guiTextured, BLOCK_ATLAS, this.getX(), this.getY() + notDrawingHeight, sprite.getU0() * (float) atlasWidth, sprite.getV0() * (float) atlasHeight + (float) notDrawingHeight, this.getWidth(),
+							drawingHeight, atlasWidth, atlasHeight, color);
 					guiGraphics.pose().translate(0.0F, -16.0F, 0.0F);
 				}
 				RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);

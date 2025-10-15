@@ -1,0 +1,193 @@
+[14Oct2025 19:34:10.208] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.176, --assetIndex, 17, --assetsDir, C:\Users\Oliver Hardiman\.mcreator\gradle\caches\neoformruntime\assets, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.176, --fml.neoFormVersion, 20240808.144430]
+[14Oct2025 19:34:10.213] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+[14Oct2025 19:34:10.217] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.4+main.d2e20e43 starting: java version 21.0.7 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[14Oct2025 19:34:10.433] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[14Oct2025 19:34:10.578] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[14Oct2025 19:34:10.642] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.5
+[14Oct2025 19:34:10.651] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.5 got version 4.5
+[14Oct2025 19:34:11.001] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/Oliver%20Hardiman/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[14Oct2025 19:34:11.166] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: Intel(R) HD Graphics 530 GL version 4.5.0 - Build 22.20.16.4749, Intel
+[14Oct2025 19:34:11.792] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[14Oct2025 19:34:11.794] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Genetic Playground 1.0.0 (genetic_playground)
+		Just Enough Items 19.21.0.247 (jei)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.176 (neoforge)
+[14Oct2025 19:34:15.819] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.176, --gameDir, ., --assetsDir, C:\Users\Oliver Hardiman\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[14Oct2025 19:34:18.636] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 693 milliseconds
+[14Oct2025 19:34:19.148] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[14Oct2025 19:34:28.065] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14Oct2025 19:34:28.069] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14Oct2025 19:34:28.074] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14Oct2025 19:34:28.077] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14Oct2025 19:34:28.079] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14Oct2025 19:34:28.390] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Documents/Cedric/Genetics/geneticplaygroundlondon/build/moddev/artifacts/neoforge-21.1.176.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[14Oct2025 19:34:28.390] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/Documents/Cedric/Genetics/geneticplaygroundlondon/build/moddev/artifacts/neoforge-21.1.176.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[14Oct2025 19:34:28.459] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[14Oct2025 19:34:28.492] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[14Oct2025 19:34:28.739] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[14Oct2025 19:34:29.272] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.176, for MC 1.21.1
+[14Oct2025 19:34:29.496] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[14Oct2025 19:34:29.509] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 7.647 ms
+[14Oct2025 19:34:32.059] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[14Oct2025 19:34:32.522] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/genetic_playground, mod/jei
+[14Oct2025 19:34:32.811] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[14Oct2025 19:34:33.650] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[14Oct2025 19:34:37.192] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[14Oct2025 19:34:37.193] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[14Oct2025 19:34:37.408] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speaker/HP (Realtek High Definition Audio)
+[14Oct2025 19:34:37.409] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[14Oct2025 19:34:37.575] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[14Oct2025 19:34:37.694] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/signs.png-atlas
+[14Oct2025 19:34:37.701] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[14Oct2025 19:34:37.709] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[14Oct2025 19:34:37.725] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[14Oct2025 19:34:37.792] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[14Oct2025 19:34:37.794] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[14Oct2025 19:34:37.797] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[14Oct2025 19:34:37.800] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[14Oct2025 19:34:38.132] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[14Oct2025 19:34:38.140] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[14Oct2025 19:34:38.142] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[14Oct2025 19:34:38.145] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[14Oct2025 19:34:38.146] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[14Oct2025 19:34:38.456] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[14Oct2025 19:34:38.992] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[14Oct2025 19:34:38.992] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[14Oct2025 19:35:06.324] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1378 recipes
+[14Oct2025 19:35:06.600] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1461 advancements
+[14Oct2025 19:35:07.365] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
+[14Oct2025 19:35:07.531] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[14Oct2025 19:35:07.531] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[14Oct2025 19:35:10.338] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[14Oct2025 19:35:11.187] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Oct2025 19:35:11.188] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[14Oct2025 19:35:11.360] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 36%
+[14Oct2025 19:35:11.637] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[14Oct2025 19:35:11.646] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1301 ms
+[14Oct2025 19:35:11.909] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[14Oct2025 19:35:11.910] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[14Oct2025 19:35:12.948] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
+[14Oct2025 19:35:13.382] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:c145d5fc] logged in with entity id 33 at (-39.643731298710826, 96.0, -92.11862712618698)
+[14Oct2025 19:35:13.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[14Oct2025 19:35:13.860] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_horse_cell
+[14Oct2025 19:35:13.860] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_mule_cell
+[14Oct2025 19:35:13.861] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_chicken_cell
+[14Oct2025 19:35:13.861] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_pig_cell
+[14Oct2025 19:35:13.861] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_cod_cell
+[14Oct2025 19:35:13.861] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_donkey_cell
+[14Oct2025 19:35:13.861] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_enderman_cell
+[14Oct2025 19:35:13.861] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_creeper_cell
+[14Oct2025 19:35:13.862] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_sheep_cell
+[14Oct2025 19:35:13.862] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_rabbit_cell
+[14Oct2025 19:35:13.862] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_cow_cell
+[14Oct2025 19:35:13.862] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_centrifuge_jei/genetic_playground:jei_salmon_cell
+[14Oct2025 19:35:13.863] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:max_health_double_helix_jei
+[14Oct2025 19:35:13.863] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:water_breathing_helix_jei
+[14Oct2025 19:35:13.863] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:hydrophobic_double_helix_jei
+[14Oct2025 19:35:13.863] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:movement_speed_double_helix_jei
+[14Oct2025 19:35:13.864] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:grazing_double_helix_jei
+[14Oct2025 19:35:13.864] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:explosive_double_helix_jei
+[14Oct2025 19:35:13.864] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:wooly_double_helix_jei
+[14Oct2025 19:35:13.864] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:failed_double_helix_jei
+[14Oct2025 19:35:13.864] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:jump_height_helix_jei
+[14Oct2025 19:35:13.864] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:teleportation_double_helix_jei
+[14Oct2025 19:35:13.865] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:broken_double_helix_jei
+[14Oct2025 19:35:13.865] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:water_speed_helix_jei
+[14Oct2025 19:35:13.865] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:endersight_double_helix_jei
+[14Oct2025 19:35:13.865] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:egg_double_helix_jei
+[14Oct2025 19:35:13.865] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:blood_extraction_jei/genetic_playground:milkable_double_helix_jei
+[14Oct2025 19:35:13.866] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:endersight_plasmid_recipe_jei
+[14Oct2025 19:35:13.866] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:egg_plasmid_recipe_jei
+[14Oct2025 19:35:13.866] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:teleportation_plasmid_recipe_jei
+[14Oct2025 19:35:13.866] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:higher_jump_plasmid_recipe_jei
+[14Oct2025 19:35:13.867] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:hydrophobic_plasmid_recipe_jei
+[14Oct2025 19:35:13.867] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:maxhealth_recipe_jei
+[14Oct2025 19:35:13.867] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:wooly_plasmid_recipe_jei
+[14Oct2025 19:35:13.867] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:milkable_plasmid_recipe_jei
+[14Oct2025 19:35:13.867] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:grazing_plasmid_recipe_jei
+[14Oct2025 19:35:13.868] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:explosive_plasmid_recipe_jei
+[14Oct2025 19:35:13.868] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:water_speed_plasmid_recipe_jei
+[14Oct2025 19:35:13.868] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:movementspeed_plasmid_recipe_jei
+[14Oct2025 19:35:13.868] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:plasmid_synthesiser_jei_type/genetic_playground:water_breathing_plasmid_recipe_jei
+[14Oct2025 19:35:13.868] [Render thread/WARN] [net.minecraft.client.ClientRecipeBook/]: Unknown recipe category: genetic_playground:uranium_fuel_rod_decay/genetic_playground:spent_fuel_rod_jei
+[14Oct2025 19:35:13.878] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
+[14Oct2025 19:35:13.878] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
+[14Oct2025 19:35:13.881] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[14Oct2025 19:35:13.896] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[14Oct2025 19:35:13.906] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 8.586 ms
+[14Oct2025 19:35:13.906] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[14Oct2025 19:35:13.910] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 3.072 ms
+[14Oct2025 19:35:13.914] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[14Oct2025 19:35:14.096] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
+[14Oct2025 19:35:14.117] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 202.9 milliseconds
+[14Oct2025 19:35:14.118] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 204.4 ms
+[14Oct2025 19:35:14.118] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[14Oct2025 19:35:14.120] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 1.225 ms
+[14Oct2025 19:35:14.120] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[14Oct2025 19:35:14.122] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.727 ms
+[14Oct2025 19:35:14.148] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[14Oct2025 19:35:14.149] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 1.147 ms
+[14Oct2025 19:35:14.181] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[14Oct2025 19:35:14.212] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 29.45 milliseconds
+[14Oct2025 19:35:14.222] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 40.08 ms
+[14Oct2025 19:35:14.224] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[14Oct2025 19:35:14.230] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 5.742 ms
+[14Oct2025 19:35:14.232] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[14Oct2025 19:35:14.234] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 2.164 ms
+[14Oct2025 19:35:14.235] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[14Oct2025 19:35:14.260] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 23.98 ms
+[14Oct2025 19:35:14.262] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[14Oct2025 19:35:14.264] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 1.076 ms
+[14Oct2025 19:35:14.268] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[14Oct2025 19:35:14.537] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 269.2 milliseconds
+[14Oct2025 19:35:14.619] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 70.19 milliseconds
+[14Oct2025 19:35:14.620] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 351.9 ms
+[14Oct2025 19:35:14.635] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[14Oct2025 19:35:14.640] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 5.215 ms
+[14Oct2025 19:35:14.654] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[14Oct2025 19:35:14.665] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[14Oct2025 19:35:14.683] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 17.09 ms
+[14Oct2025 19:35:14.689] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[14Oct2025 19:35:14.694] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[14Oct2025 19:35:14.695] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[14Oct2025 19:35:14.744] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 48.79 ms
+[14Oct2025 19:35:14.744] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[14Oct2025 19:35:14.831] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1800 ingredients
+[14Oct2025 19:35:15.265] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1800 ingredients
+[14Oct2025 19:35:15.267] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 522.6 ms
+[14Oct2025 19:35:15.405] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 714.9 milliseconds
+[14Oct2025 19:35:15.405] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 716.2 ms
+[14Oct2025 19:35:15.406] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 752.2 ms
+[14Oct2025 19:35:15.407] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[14Oct2025 19:35:15.409] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 1.556 ms
+[14Oct2025 19:35:15.409] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.528 s
+[14Oct2025 19:35:15.435] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 81 advancements
+[14Oct2025 19:35:27.650] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 2006ms or 40 ticks behind
+[14Oct2025 19:35:42.994] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[14Oct2025 19:35:43.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14Oct2025 19:35:43.095] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14Oct2025 19:35:43.095] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14Oct2025 19:35:43.554] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[14Oct2025 19:35:43.586] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[14Oct2025 19:35:43.586] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to LISTENING
+[14Oct2025 19:35:43.586] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[14Oct2025 19:35:43.587] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[14Oct2025 19:35:43.587] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[14Oct2025 19:35:43.591] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 3.788 ms
+[14Oct2025 19:35:43.676] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[14Oct2025 19:35:43.677] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[14Oct2025 19:35:43.836] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[14Oct2025 19:35:43.922] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[14Oct2025 19:35:43.924] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[14Oct2025 19:35:43.924] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[14Oct2025 19:35:44.085] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[14Oct2025 19:35:44.537] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[14Oct2025 19:35:44.572] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[14Oct2025 19:35:44.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (4)): All chunks are saved
+[14Oct2025 19:35:44.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14Oct2025 19:35:44.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14Oct2025 19:35:44.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

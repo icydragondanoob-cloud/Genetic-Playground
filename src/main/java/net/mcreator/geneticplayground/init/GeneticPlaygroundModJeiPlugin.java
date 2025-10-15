@@ -1,10 +1,8 @@
 package net.mcreator.geneticplayground.init;
 
-import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.geneticplayground.jei_recipes.UraniumFuelRodDecayRecipeCategory;
 import net.mcreator.geneticplayground.jei_recipes.UraniumFuelRodDecayRecipe;
@@ -22,7 +20,6 @@ import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.IModPlugin;
 
 import java.util.stream.Collectors;
-import java.util.Objects;
 import java.util.List;
 
 @JeiPlugin
@@ -47,14 +44,13 @@ public class GeneticPlaygroundModJeiPlugin implements IModPlugin {
 
 	@Override
 	public void registerRecipes(IRecipeRegistration registration) {
-		RecipeManager recipeManager = Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager();
-		List<PlasmidSynthesiserJEITypeRecipe> PlasmidSynthesiserJEITypeRecipes = recipeManager.getAllRecipesFor(PlasmidSynthesiserJEITypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		List<PlasmidSynthesiserJEITypeRecipe> PlasmidSynthesiserJEITypeRecipes = GeneticPlaygroundModRecipeTypes.recipes.byType(PlasmidSynthesiserJEITypeRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(PlasmidSynthesiserJEIType_Type, PlasmidSynthesiserJEITypeRecipes);
-		List<BloodCentrifugeJEIRecipe> BloodCentrifugeJEIRecipes = recipeManager.getAllRecipesFor(BloodCentrifugeJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		List<BloodCentrifugeJEIRecipe> BloodCentrifugeJEIRecipes = GeneticPlaygroundModRecipeTypes.recipes.byType(BloodCentrifugeJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(BloodCentrifugeJEI_Type, BloodCentrifugeJEIRecipes);
-		List<BloodExtractionJEIRecipe> BloodExtractionJEIRecipes = recipeManager.getAllRecipesFor(BloodExtractionJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		List<BloodExtractionJEIRecipe> BloodExtractionJEIRecipes = GeneticPlaygroundModRecipeTypes.recipes.byType(BloodExtractionJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(BloodExtractionJEI_Type, BloodExtractionJEIRecipes);
-		List<UraniumFuelRodDecayRecipe> UraniumFuelRodDecayRecipes = recipeManager.getAllRecipesFor(UraniumFuelRodDecayRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		List<UraniumFuelRodDecayRecipe> UraniumFuelRodDecayRecipes = GeneticPlaygroundModRecipeTypes.recipes.byType(UraniumFuelRodDecayRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(UraniumFuelRodDecay_Type, UraniumFuelRodDecayRecipes);
 	}
 

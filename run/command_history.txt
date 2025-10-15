@@ -1,0 +1,19 @@
+/time set day
+/tick rate 1000
+/tick rate 10000
+/tick rate 20
+/time set day
+/gamemode survival
+/gamemode creative
+/gamerule keepInventory true
+/effect give Dev minecraft:resistance infinite 255 true
+/gamemode survival
+/gamemode creative
+/locate structure minecraft:mansion
+/tp @s -560 ~ 4304
+/gamemode survival
+/gamemode creative
+/give dev minecraft:iron_pickaxe
+/give dev genetic_playground:needle
+/gamemode creative
+/time set day
